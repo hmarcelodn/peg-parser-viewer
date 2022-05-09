@@ -1,0 +1,103 @@
+{
+    function processCondition(lhs, rhs, op) {
+       switch (op) {
+           case '<':
+            return parseFloat(lhs) < parseFloat(rhs);
+          case '>':
+            return parseFloat(lhs) > parseFloat(rhs);
+          case '>=':
+            return parseFloat(lhs) >= parseFloat(rhs);
+          case '<=':
+            return parseFloat(lhs) <= parseFloat(rhs);
+          case '$=':
+            return lhs.toString().trim().includes(rhs.toString().trim());
+          case '=':
+            return lhs === rhs;
+          case '!=':
+            return lhs !== rhs;
+          default:
+            return false;
+       }
+    }
+  
+    function parseConditions(tree) {
+      const results = [];
+  
+      if (tree?.predicates) {
+        const operator = tree.op;
+        const predicates = tree.predicates;
+        let recursiveResult = true;
+  
+        for (let i = 0; i < predicates.length; i++) {
+           const predicateExpressionNode = predicates[i];
+     
+           if (predicateExpressionNode.predicates) {
+              recursiveResult = parseConditions(predicates[i]);
+           } else {
+              const { lhs, rhs, op } = predicateExpressionNode;
+              results.push(processCondition(lhs.join(''), rhs.join(''), op));                
+           }
+        }
+  
+        if (operator === '||') return results.some(r => r === true) || recursiveResult;    
+        return results.every(r => r === true) && recursiveResult;
+      }
+  
+     return processCondition(tree.lhs.join(''), tree.rhs.join(''), tree.op);
+    }
+  }
+  
+  start = Code
+  
+  Code = token:(ConditionalBooleanStatement / Text )* {
+      return token.join('')
+  }
+  
+  OrCondition = head:AndCondition tail:(_ '||' _ AndCondition)+ {
+     const accum = [{...head}];
+     tail.reduce((accumulated, element) => {
+      accumulated.push(element[3]);
+             return accumulated;
+     }, accum);
+  
+     return { op: '||', predicates: accum };
+  } / AndCondition
+  
+  AndCondition = head:ConditionStatement tail:(_ '&&' _ ConditionStatement)+ {
+     const accum = [{...head}];
+     tail.reduce((accumulated, element) => {
+      accumulated.push(element[3]);
+          return accumulated;
+     }, accum);
+  
+     return { op: '&&', predicates: accum };
+  } / ConditionStatement
+  
+  ConditionStatement
+      =
+      lhs:Condition
+      operator: Operator
+      rhs:Condition _ {
+          return {op: operator.join(''), lhs, rhs};
+      }
+  
+  ConditionalBooleanStatement
+      =
+      "[if condition='"
+      conditional: OrCondition
+      "']" _
+      body1: Code _
+      '[else]'*
+      body2: Code _
+      '[/if]' {
+          const conditionalResult = parseConditions(conditional);
+          if (conditionalResult) return body1;
+          return body2;
+      }
+  
+  Operator = ("=" / "!=" / ">" / "<" / ">=" / "<=" / "$=")+
+  And = "&&"
+  Or = "||"
+  Condition = token:[a-zA-Z0-9]+
+  Text = token:[^\[\]]+ {return token.join('')}
+  _ "whitespace" = [ \t\n\r\0]* 
