@@ -98,6 +98,6 @@
   Operator = ("=" / "!=" / ">" / "<" / ">=" / "<=" / "$=")+
   And = "&&"
   Or = "||"
-  Condition = token:[a-zA-Z0-9]+
+  Condition = token:[ a-zA-Z0-9]+
   Text = token:[^\[\]]+ {return token.join('')}
   _ "whitespace" = [ \t\n\r\0]* 
