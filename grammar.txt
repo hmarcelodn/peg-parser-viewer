@@ -86,12 +86,12 @@ ConditionalBooleanStatement
     =
     _ "[if condition='"
     conditional: OrCondition
-    "']" _
+    "']"
     body1: Code _
     '[else]'*
     body2: Code _
     '[/if]' _ {
-    const conditionalResult = parseConditions(conditional);
+    	const conditionalResult = parseConditions(conditional);
         if (conditionalResult) return body1;
         return body2;
     }
