@@ -30,7 +30,7 @@
 
 start = Code
 
-Code = token:(Text / ConditionalBooleanStatement)*
+Code = token:(Text / QuestionToken / VariableToken / ConstantToken / ConditionalBooleanStatement)*
  
 OrCondition = head:AndCondition tail:(_ '||' _ AndCondition)+ {
    const accum = [{...head}];

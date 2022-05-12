@@ -23,7 +23,8 @@ const thlParser = peg.generate(defaultGrammar.toString());
 const thlVisitor = new THLVisitor();
 
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json({limit: '900mb'}));
+app.use(bodyParser.urlencoded({limit: '900mb', extended: true}));
 
 router.get('/', (req, res) => {
     const thlAst = thlParser.parse(defaultExpression);
