@@ -1,0 +1,1629 @@
+# HIPAA Security Policies and Procedures
+
+# [q#119]
+
+## Revision History
+
+$capitalize($possessive([q#3])) Security Policies and Procedures were adopted as of \[Date\] by
+
+$capitalize($possessive([q#3])) Security Policies and Procedures were modified as of \[Date\] by
+
+$capitalize($possessive([q#3])) Security Policies and Procedures were modified as of \[Date\] by
+
+$capitalize($possessive([q#3])) Security Policies and Procedures were modified as of \[Date\] by
+
+$capitalize($possessive([q#3])) Security Policies and Procedures were modified as of \[Date\] by
+
+# I. [q#119]
+
+[q#119] may be referred to as “[q#2]" or “[q#3].”
+
+## 1. Overview
+
+[if condition='q#120="Employer" || q#120="Medical/Dental Provider"']Covered Entities and their [/if]Business Associates must create HIPAA Policies and Procedures (“Policies and Procedures”) with respect to [if condition='q#120="Employer Group" || q#120="Medical/Dental Provider"']Protected Health Information (PHI)[/if][if condition='q#120="Agency" || q#120="Business Associate"']Protected Data[/if] that are designed to comply with the standards and implementation specifications under 45 CFR § 164.530(i)(1). They must change their Policies and Procedures as necessary and appropriate to comply with changes in the law, including the standards, requirements, and implementation specifications of § 164.530(i)(2)(i).
+
+‘CFR’ stands for the Code of Federal Regulations, which are divided into 50 broad areas (‘titles’), and subject to government regulations. ‘45’ is the Public Welfare title and includes the principal set of rules and regulations issued by federal agencies regarding public welfare. ‘§’ stands for Section. ‘45CFR’ will be implied and not repeated in future citations.
+
+## 2. Scope
+Implementing HIPAA compliance is not only important to protect [if condition='q#120="Agency"']client[/if][if condition='q#120="Employer Group" || q#120="Business Associate"']employee[/if][if condition='q#120="Medical/Dental Provider"']patient[/if] information entrusted to [q#2] but also safeguards $the_noun($possessive([q#3])) business intelligence. This document defines control processes and procedures that will help [q#2] comply with federal regulations and policies[if condition='q#120="Employer"'], including ERISA,[/if] in addition to HIPAA and cites the Policies and Procedures $the_noun([q#3]) has put in place to protect all private, internal, and protected information.
+
+## 3. Definitions
+
+_**Business Associate (BA)**:_ An entity that creates, receives, maintains, or transmits Protected Health Information on behalf of a Covered Entity.
+
+_**Business Associate Subcontractor (BAS)**:_ An entity that creates, receives, maintains, or transmits Protected Health Information on behalf of another Business Associate. (Business Associate and Business Associate Subcontractor are often used interchangeably.)
+
+_**Covered Entity**:_ A health plan, a healthcare clearinghouse, or a healthcare provider who transmits and PHI in electronic form in connection with a transaction.
+
+_**Electronic Protected Health Information (ePHI)**:_ Refers to PHI that is covered under HIPAA security regulations and is produced, saved, transferred, or received in an electronic form.[if condition='q#7>=1']
+
+_**Employees**:_ Staff, volunteers, and other persons whose conduct, in the performance of work for $a_an([q#3]), is under the direct control of such an entity, whether or not they are paid by $the_noun([q#3]). This includes full- and part-time staff, affiliates, associates, volunteers, and staff from third parties who provide service to $the_noun([q#3]). For the purposes of this document, an employee is anyone in [q#2] who has access or potential access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[/if]
+
+_**Information Security Officer (ISO)**:_ Official responsible for developing and maintaining the information security program and developing the following system security responsibilities:
+1.  Developing and maintaining information security policies, procedures, and control techniques to address system security planning; 
+1.  Managing the identification, implementation, and assessment of common security controls;[if condition='q#7>=1']
+1.  Ensuring that employees with significant responsibilities for system security plans are trained; 
+1.  Assisting senior [q#2] officials with their responsibilities for system security plans; [/if]and 
+1.  Identifying and developing common security controls for [q#2].
+
+_**Personally Identifiable Information (PII)**:_ Any information about an individual maintained by $the_noun([q#3]), including: 
+1. Any information that can be used to distinguish or trace the identity of an individual, such as name, social security number, date and place of birth, mother's maiden name, or biometric records; and 
+1. Any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.
+
+[if condition='q#120="Agency" || q#120="Business Associate"']_**Protected Data**:_ PHI and/or PII which is used, disclosed, transmitted, or stored by a company. (This is the most comprehensive definition as it encompasses both PHI and PII.)[/if]
+
+[if condition='q#120="Employer Group" || q#120="Medical/Dental Provider"']_**Protected Health Information (PHI)**:_ Individually identifiable information relating to the past, present, or future physical or mental health or condition of an individual, provision of healthcare to an individual, or the past, present, or future payment for healthcare provided to an individual.[/if]
+
+1.  [if condition='q#120="Employer Group" || q#120="Medical/Dental Provider"']PHI[/if][if condition='q#120="Agency" || q#120="Business Associate"']Protected Data[/if] includes personal medical information plus any one of the following that would identify an individual:
+    1.  Name
+    1.  Address
+    1.  Date of birth
+    1.  Social security number
+    1.  Age
+    1.  Gender
+    1.  Personal financial information
+    1.  Personal buying history
+
+1.  Aggregated and statistical data developed from this personal information is not still personally identifiable and, thus, does not need the approval of the ISO for sharing and re-use.[if condition='q#7>=1']
+
+## 4. Policy
+1. [q#2] will maintain these Policies and Procedures to comply with HIPAA standards and implementation specifications.
+
+1. [q#2] will change these Policies and Procedures as necessary and appropriate to comply with changes in the law.
+
+
+## 5. Document Control
+A copy of this document is available with the ISO on a need-to-know basis.[/if]
+
+## 6. Security Document Library
+These Policies and Procedures and related security practice information will be kept in the Security Documentation Library (SDL). The SDL is located [q#55].
+
+Outdated and superseded materials from the SDL will be kept in the Security Documentation Archive for at least six years after the date when they are first outdated or superseded. (§§ 164.316(b)(1) and (2))
+
+# II. Preface and Background Material
+## 1. Overview
+It is vital to the reputation and profitability of [if condition='q#120="Employer" || q#120="Medical/Dental Provider"']Covered Entities and their [/if]Business Associates that information, in all forms, be protected from unauthorized use, modification, loss, copying, etc. This document sets out the default standards which must be met to ensure that the [q#3] is compliant with HIPAA[if condition='q#120="Employer"'] and ERISA[/if] as it pertains to PHI, ePHI, and PII. Collectively this will be known as [if condition='q#120="Employer Group" || q#120="Medical/Dental Provider"']PHI[/if][if condition='q#120="Agency" || q#120="Business Associate"']Protected Data[/if].
+
+$capitalize([q#2]) information may exist on paper, in voice systems, on IT systems[if condition='q#1729="Yes"'] and networks[/if], [if condition='q#7>=1']in the minds of employees, [/if]and in other forms. The information which needs protection includes, but is not limited to:
+
+1. [if condition='q#120="Medical/Dental Provider"']Patient information[/if][if condition='q#120="Agency" || q#120="Business Associate" || q#120="Employer Group"']Client Information (both for client companies and for people as individuals)[/if];[if condition='q#7>=1']
+1. Employee information (medical information of all types, social security numbers, personal data, background information, etc.);[/if]
+1. Financial information (credit cards, salaries, banking, transactions, etc.);
+1. Intellectual property ([if condition='q#120="Employer"']patents, [/if]business plans, records, planning materials, [if condition='q#120="Medical/Dental Provider"']patient lists[/if][if condition='q#120="Agency" || q#120="Business Associate" || q#120="Employer Group"']customer lists[/if], marketing, and sales efforts,[if condition='q#120="Agency" || q#120="Business Associate" || q#120="Employer Group"'] product line plans,[/if] etc.); and
+1. Copyrighted materials (created, licensed, obtained, or purchased).
+
+## 2. Definitions
+
+_**Guidelines**:_ Built for each application and platform; to be followed when implementing that particular tool; a guideline may vary a bit from one implementation to another, as long as the security standards are met, and justification is given and properly documented.
+
+_**Policies**:_ Documents which set out an entity’s position regarding business processes[if condition='q#7>=1'], behavior of employee,[/if] and similar topics; a high-level statement of position; some policies which relate to information security are the:
+
+1.  Security Policy;[if condition='q#7>=1'] and[/if]
+1.  Privacy Policy[if condition='q#7>=1'];
+1.  Acceptable Use Policy for IT Systems Users; and
+1.  Employment Policies[/if].
+
+_**Standards**:_ Rules which must be followed to enable an effective information security program; compliance with the standards is mandatory, but deviation is possible if approved by the ISO.
+
+1.  Standards define the minimum baseline procedures, practices, and configurations for systems, applications, controls, networks, and related topics. Standards are designed to provide a single reference point for use during software development and adoption, installation of systems and tools, and during the contracts process with vendors and service providers.
+1.  Standards do not, however, give detailed command-line instructions on how to meet policies. Those are given in the guidelines.
+
+Combined, these three levels of documents provide a method for an entity to audit itself and ensure proper controls are in place, without excess cost or risk. They also provide a means for the entity to explain to regulators, examiners, external auditors, or investors how the entity is safe, trustworthy, and efficient.
+
+## 3. Policy
+1. Compliance with these Standards is mandatory. 
+1. Any deviation from these Standards must be approved beforehand by the ISO.
+
+## 4. Key Concepts: Information Security Principles
+
+The following must be taken under consideration when handling [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]:
+
+1. Confidentiality
+1. Integrity
+1. Availability
+1. Provability
+1. Balance risk against cost of controls
+
+In this document, the Standards given are defaults. They must be applied where appropriate, but always balanced against the cost of implementing the control and the value of the information involved.
+
+# III. Using These Standards
+
+## 1. Overview—Who Will Use this Document
+
+This document applies to [if condition='q#120=Agency']$the_noun([q#3])[else]employees[/if] and any Business Associate[if condition='q#120=Agency || q#120=Business Associate'] Subcontractor (BAS)[/if] supporting [q#2] that have access or potential access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]:
+
+1. Technology and business process providers should comply with these Standards as a matter of contractual obligation.[if condition='q#7>=1']
+1. Everyone within [q#2] should comply unless a prior risk assessment has been done and a deviation is approved by the ISO.[/if]
+1. Anyone implementing technologies within [q#2] should use this document as part of the requirement-setting process for the design of new tools and processes.
+
+## 2. Definitions
+
+_**Shall, Will, Mandatory, Must**:_ Mean the standard mentioned is a requirement and must be met.
+
+_**Should, Recommended, Where Possible**:_ Indicate that the standard mentioned is a preferred and accepted control. Deviation may be possible if compensating controls are in place, a risk analysis of the deviation has been done and management signoff is obtained.
+
+_**May, Optional**:_ Indicate that the standard mentioned is optional. Deviation does not require signoff or approval but is determined by the requirements of the implementation at hand. The implementation documentation should include a discussion of why the deviation was chosen so that future reviewers will have all needed information.
+
+## 3.  Standards
+
+This document is a reference point for use by [if condition='q#120=Agency']technology implementers and service providers[else][if condition='q#120=Employer || q#7>100']business units,[/if] technology implementers, and service providers[/if] to ensure a consistent framework of protection is in place. Implementing these standards involves:
+
+1. Review of existing controls, procedures, and tools against the Standards;
+1. Documenting deviations;
+1. Gap analysis to determine where improvements are needed;
+1. A Risk Assessment to validate that the improvements are justified against the costs of the controls and the value of the information involved;
+1. Creation of a plan to close the gaps, or sign off on a deviation; and
+1. Documentation of the new controls, procedures, and tools.
+
+No signoff or approvals are needed if a level of protection higher than what is given in this Standard is determined to be needed for a given information asset.
+
+## 4. Maintaining this Document
+
+1. This  document must be reviewed by the ISO[if condition='q#14=Yes'] or designee[/if] at least once a year and updated to keep it in line with $possessive([q#2]) overall business goals and risk position.
+1. Any updates, improvements, or suggestions should be sent to the ISO.
+
+# IV. Roles and Responsibilities
+
+## 1. Overview
+
+[if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates will assign an individual [if condition='q#221=IT Vendor || q#221=Both']or third-party vendor[/if] with the responsibility to provide an organization focus and importance to security, and the assignment will be documented as required under § 164.308(a)(2).
+
+## 2. Definitions
+
+_**Information Owner**:_ Designee with statutory or operational authority for specified information (PHI, PII, etc.); responsible for establishing the controls for information generation, collection, processing, dissemination, and disposal; has the following responsibilities related to system security plans:
+
+1. Establishing the rules for the appropriate use and protection of the data/information (rules of behavior);
+1. Providing input to information system owners on the security requirements and security controls for the information systems where the information resides; 
+1. Deciding who has access to the information system and determining what types of privileges or access rights; and 
+1. Assisting in identifying and assessing the common security controls where the information resides. 
+
+_**Information User**:_ Refers to the person who has the responsibility to use the information and is required to protect it; the information itself remains the property of [q#2].
+
+## 3. Applicability
+
+The Policies and Procedures in this document apply to [if condition='q#7>=1']all employees, [/if]management, [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if], vendors, business partners, and any other parties having access to or potential access to[if condition='q#120=Agency'] client[/if][if condition='q#120=Medical/Dental Provider'] patient[/if] [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[if condition='q#7>=1']
+
+## 4. Policy
+
+1. Every user of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] must protect that information and ensure that it is used for [q#3] business purposes only. 
+1. Any incidents or questionable issues regarding the security of $possessive([q#2]) [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] must be reported to [if condition='q#570=Privacy Officer']the Privacy Officer[/if][if condition='q#570=Other']the $get_contact_title([q#571])[/if][if condition='q#48=No']the ISO[/if].
+1. Information users may not assign access rights, authorize destruction or copying of information, or change the protections given to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]. 
+1. Information users must comply with all laws, regulations, and [q#2] policies.[/if]
+
+## 5. Information Security Officer (ISO)
+
+[if condition='q#7>=5'][q#2] has designated [else][if condition='q#120=Agency']Agency owner [/if][/if]$get_contact_firstname([q#118]) $get_contact_lastname([q#118]), $get_contact_email([q#118]), $get_contact_phone([q#118]), [if condition='q#7<=5']will serve [/if]as the ISO.[if condition='q#154=Yes'] The Assistant ISO (AISO) is $get_contact_firstname([q#155]) $get_contact_lastname([q#155]), $get_contact_email([q#155]), $get_contact_phone([q#155]).[/if][if condition='q#221=IT Vendor || q#221=Both'] $get_contact_firstname([q#223]) $get_contact_lastname([q#223]) at [q#222] (“IT Vendor”), $get_contact_email([q#223]), $get_contact_phone([q#223]), provides support.[/if]
+
+## 6. Enforcement
+
+[if condition='q#7>=1']Violation of any policies or procedures in this document by employees may result in corrective disciplinary action, up to and including termination of employment. [/if]Violation of these policies and procedures by others, including [if condition='q#120=Agency || q#120=Business Associate']BASs[else]Business Associates[/if] and partners, may result in termination of the relationship and/or associated privileges. Violation may also result in civil and criminal penalties as determined by federal and state laws and regulations.
+
+# V. [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] Classifications and Requirements
+
+## 1. Overview
+
+[if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is classified to ensure that the controls applied to it are sufficient and do not impair an entity's business, ability to compete, or image.
+
+All [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] must have a classification for security and must have requirements set for business continuity (§§ 164.308(a)(7)(ii)(A-E)). Data classification and business continuity requirements may be specified at the data set level or may be specified at the level of the system containing the [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+
+## 2. Definition
+
+_**Data Set:**_ A collection of related sets of information; composed of separate elements but can be manipulated as a unit.
+## 3. The Security Classification Process
+
+[if condition='q#1728=Yes']
+Security classifications are managed by [if condition='q#1728=Yes || q#709=Cloud Based || q#160=Cloud Backups || q#55=in the cloud']the [q#2] cloud provider, [q#189][/if].
+[else]
+1. Each information asset will be classified by the type of information they contain and/or come in contact with. Assets include, but are not limited to:
+    1. IT platforms such as [if condition='q#703=Yes']servers and[/if] workstations;
+    1. IT applications including database transaction processing and email;
+    1. Data sets;[if condition='q#56=Yes']
+    1. Paper copies of information;[/if]
+    1. Information types typically known[if condition='q#7>=1'] to employees[/if], such as customer information.
+
+1. In general, an information asset includes the raw information itself ([if condition='q#56=Yes']paper, [/if]oral or data entry), the location where it resides, the business processes, and the systems and tools which handle it.
+
+    1. All information assets must be classified and reviewed at least once a year.
+    1. Information assets will also be reviewed during:
+        1. Development, acquisition, or deployment of software;
+        1. Connections of computers or networks to outside systems or networks; and
+        1. Granting of access to any outside organizations.
+[/if]
+
+## 4. The Classes of Information for Security and Privacy
+
+$capitalize([q#2]) deals with two main kinds of data:
+1.  _$capitalize([q#2])-Owned:_ Relates to such areas as [if condition='q#120=Employer']corporate [/if]financials, [if condition='q#7>=1']employment records, payroll, [/if]etc.
+1. _Private:_ The property of [if condition='q#120=Agency || q#120=Business Associate']clients[/if][if condition='q#120=Medical/Dental Provider']patients[/if][if condition='q#120=Employer Group']employees[/if], such as social security numbers, [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], credit card information, contact information, etc.
+
+[if condition='q#1728=Yes']
+$capitalize([q#2]) data is comprised of four (4) classifications of information:
+
+1. _Public/Unclassified_: This is defined as information that is generally available to anyone within or outside [q#2]. Access to this data is unrestricted, may already be available and can be distributed as needed. Public/unclassified data includes, but is not limited to, marketing materials, annual reports, corporate financials, and other data as applicable. Employees may send or communicate a public/unclassified piece of data with anyone inside or outside $the_noun([q#3]).
+1. _Private/Internal_: This is defined as [q#2] information that is to be kept within $the_noun([q#3]). Access to this data may be limited to [if condition='q#120=Agency']employees[else]specific departments[/if] and cannot be distributed outside of the workplace. Private data includes, but is not limited to, [if condition='q#7>=7']work phone directories, [/if]organizational charts, [q#2] policies, and other data as applicable. All information not otherwise classified will be assumed to be Private. Employees may not disclose Private data to anyone who is not a current employee.
+1.  _Confidential_: This is defined as personal or [q#2] information that may be considered potentially damaging if released and is only accessible to specific groups[if condition='q#7>20'] (e.g., payroll, HR, etc.)[/if]. Confidential data includes, but is not limited to, social security numbers, contact information, tax forms, accounting data, security procedures, and other data as applicable. $capitalize([q#2]) considers it a top priority to protect the privacy of [if condition='q#120=Agency']clients[/if][if condition='q#120=Medical/Dental Provider']patients[/if][if condition='q#120=Employer Group|| q#120=Business Associate']employees[/if]. Employees may only share confidential data within $the_noun([q#3]) or named distribution list.
+1. _Protected_: This is defined as sensitive data which, if leaked, would be harmful to [q#2], its[if condition='q#120=Medical/Dental Provider'] patients,[/if] employees, agents, and other parties as applicable. Access is limited to authorized employees and third parties as required. [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] includes, but is not limited to, health information, audit reports, legal documentation, business strategy details, and other data as applicable. [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] cannot be disclosed by anyone other than the original author, owner, or distributor.
+[/if]
+
+## 5. Setting Requirements for Data Continuity
+
+[if condition='q#1728=Yes']
+Data continuity requirements are inherited from the [if condition='q#1728=Yes || q#709=Cloud Based || q#160=Cloud Backups || q#55=in the cloud'][q#2] cloud provider[/if].
+[else]
+The requirements for an information asset relating to operations continuity are specific to that asset. They include:
+1. Required uptime for the information asset;
+1. Required restoration time if the data must be restored;
+1. Required frequency of backups;
+1. Requirements for storage of backups; and
+1. Requirements for testing of the recovery process.
+
+Some requirements such as backup frequency, backup storage methodology, and backup recovery testing requirements may be specified as default values for all enterprise systems unless more restrictive values are specified for a specific information asset. The default requirements for business continuity are listed in the Information Handling Rules section below. [if condition='q#495=Yes']Refer to the _$capitalize([q#2]) Disaster Recovery Plan_.[else]See also Appendix B: Disaster and Emergency Plans for detailed information.[/if]
+[/if]
+
+## 6. Policy
+[if condition='q#1728=Yes']
+1. [/if]$capitalize([q#2]) will not knowingly accept any [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] belonging to third parties until that information is reviewed against [q#3] protections and the appropriate agreements put into place and signed by the information owner. The agreements should include all requirements for controls over the third-party information and the processes to be followed.[if condition='q#1728=Yes']
+1. $capitalize([q#2]) depends on [if condition='q#1728=Yes || q#709=Cloud Based || q#160=Cloud Backups || q#55=in the cloud'] [q#189] for business and data continuity and inherits standards for protecting all data stored in the cloud from the cloud provider's platforms[/if].[/if]
+
+# VI. Handling Rules for the Information Classifications
+
+## 1. Overview
+
+This section outlines the basic rules for handling information types according to the classifications. More specific standards for platforms, processes, and networks appear in each topic section of this standards document. [if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates must design handling rules to reasonably safeguard [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] from any intentional or unintentional use or disclosure that is in violation of the standards, implementation specifications, or other requirements of § 164.530(c\)(2)(i).
+
+## 2. Inventory of Information Assets
+
+[if condition='q#1728=Yes']
+No [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is stored locally on any devices; all [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is stored with the cloud provider.
+[else]
+
+An inventory must be maintained of all significant information assets belonging to or used by [q#2]. This inventory must include:
+
+1. Serial numbers/license numbers;
+1. MAC addresses;
+1. Model;
+1. Device type;
+1. Manufacturer;
+1. The information owner;
+1. Username;
+1. Location;
+1. Operating System (OS) version;
+1. The custodian of the information and repository location (database[if condition='q#56=Yes'], file cabinet[/if], etc.);
+1. Purpose in [q#2] systems;
+1. Asset value in dollars or other suitable measurements;
+1. The sensitivity of the asset due to regulations, laws, customer expectations, or other requirements;
+1. Requirements for the asset regarding availability, uptime, etc.; and
+1. Contact information for one or more parties who can repair, restore, replace, or recover this asset.
+
+This inventory must be reviewed and updated annually. These logs are maintained as _Inventory of Information Assets_ and _Workstations Logs_. A current copy of this inventory will be kept at a separate location as described in the _$capitalize([q#2]) Disaster Recovery Plan_.
+[/if]
+
+# VIII. IDs and Accounts Policy
+
+## 1. Overview
+
+§ 164.308(a)(3), requires [if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates to implement procedures to ensure that [if condition='q#7>=1']users[else]employees [/if] have appropriate access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and to prevent those who do not have access from obtaining it. Each user should be assigned a unique User ID to ensure that system activity can be traced to a specific user and the necessary data is available in the system logs to support audit and other related business functions as required under §§ 164.312(a)(2)(i), (b), and (d).
+
+## 2. Definitions
+
+_**Access Control**:_ Process that limits and controls access to resources of a computer system.
+
+_**Access Privileges**:_ Systems permissions associated with an account, including permissions to access or change data, to process transactions, create or change settings, etc.
+
+_**Administrator Account**:_ User account with privileges that have advanced permissions on an IT system that are necessary for the administration of this system. For example, an administrator account can create new users, change account permissions, modify security settings such as password settings, modify system logs, etc.
+
+_**Application and Service Account**:_ User accounts that are not associated with a person but an IT system, an application (or a specific part of an application), or a network service.
+
+_**Minimum Necessary**:_ Generally, when obtaining, using, or disclosing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], or when requesting Data from another entity, reasonable effort must be made to limit the Data used or disclosed to the least amount needed to accomplish the intended purpose.
+
+_**Privileged Accounts**:_ System or application accounts that have advanced permissions (as compared to regular user account permissions) on such systems or applications. Examples include administrative and super-user accounts.
+
+_**System or Application Accounts**:_ User IDs created on IT systems or applications, which are associated with specific access privileges on such systems and applications.
+
+_**Users**:_ [if condition='q#120=Agency || q#120=Business Associate']BASs, [if condition='q#7>=1']employees, [/if]c[else][if condition='q#7>=1']C[else]Employees, c[/if][/if]onsultants, [if condition='q#120=Employer || q#120=Medical/Dental Provider']BAs[/if], agents, and authorized users accessing an entity's systems and applications.
+
+## 3. Policy
+
+1. $capitalize([q#2]) will provide access privileges to [q#3] technology [if condition='q#1728=Yes'](including networks, systems, applications, computers, and mobile devices) [/if]based on the following:
+    1. Need to know: Users of resources will be granted access to systems necessary to fulfill their roles and responsibilities.
+    1. Minimum Necessary: Users or resources will be provided with the minimum necessary privileges to fulfill their roles and responsibilities.
+1. User IDs are assigned by the [if condition='q#471=One']$get_contact_title([q#472])[/if] [if condition='q#471=Two']$get_contact_title([q#472]) and $get_contact_title([q#473])[/if][if condition='q#471=Three']$get_contact_title([q#472]), $get_contact_title([q#473]), and $get_contact_title([q#474])[/if][if condition='q#471=Four']$get_contact_title([q#472]), $get_contact_title([q#473]), $get_contact_title([q#474]), and $get_contact_title([q#475])[/if][if condition='q#471=Five']$get_contact_title([q#472]), $get_contact_title([q#473]), $get_contact_title([q#474]), $get_contact_title([q#475]), and $get_contact_title([q#476])[/if][if condition='q#470=PO || q#470=ISO'][q#470][/if].
+
+1. The following must be approved and documented in accordance with security policies and standards authorized by the ISO. Requests for:
+    1. Users’ accounts and access privileges;
+    1. Special accounts and privileges (such as vendor accounts, application and service accounts, system administration accounts, shared/generic accounts, [if condition='q#7>=1']and [/if]test accounts[if condition='q#7>=1'], and remote access[/if]).
+1. Application and service accounts must only be used by application components requiring authentication; access to the passwords must be restricted to authorized[if condition='q#7>=1'] IT administrators or[/if] application developers only.
+1. Where possible, [q#2] will set user accounts to automatically expire at a pre-set date. For example:
+    1. When temporary access is required, such access will be removed immediately after the user has completed the task for which access was granted.
+    1. User accounts assigned to [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] will be set to expire according to the contract’s expiry date.
+1. Where possible, all default user accounts will be disabled or changed. These accounts include "guest," "temp," "admin," "Administrator," and any other commonly known or used default accounts, as well as related default passwords used by vendors on “commercial off-the-shelf” systems and applications.
+1. Test accounts:
+    1. Can only be created if they are justified[if condition='q#120=Employer Group'] by the relevant business area or project team[/if] and approved by the application owner in accordance with security policy and standards authorized by the ISO;[if condition='q#1729=Yes']
+    1. Must have an expiry date (maximum of six months). Maintaining test accounts beyond this date must be re-evaluated every 90 days and approved appropriately;[/if] and
+    1. Will be disabled/deleted when they are no longer necessary.
+1. Contracts with [if condition='q#120=Agency || q#120=Business Associate']BASs[else]Business Associates[/if]/vendors will include specific requirements for the protection of data. In addition, [if condition='q#120=Agency || q#120=Business Associate']BAS[else]Business Associate[/if]/vendor representatives will be required to sign a [if condition='q#120=Agency || q#120=Business Associate']BAS Agreement[else]BAA[/if] prior to obtaining approval to access [q#2] systems and applications.
+    1. The $capitalize([q#3]) will maintain a current list of external [if condition='q#120=Agency || q#120=Business Associate']BASs[else]Business Associates[/if] or vendors having access to [q#3] systems. [if condition='q#1729=Yes']
+        1. The name of the [if condition='q#120=Agency || q#120=Business Associate']BAS[else]Business Associate[/if]/vendor representative must be communicated to the administrator responsible for provisioning access in accordance with security policy and standards authorized by the ISO at least two business days before the person needs access.
+        1. The need to terminate the access privileges of the [if condition='q#120=Agency || q#120=Business Associate']BAS[else]Business Associate[/if]/vendor must be communicated to the administrator responsible for provisioning access in accordance with security policy and standards authorized by the ISO at least one business day before the [if condition='q#120=Agency || q#120=Business Associate']BAS[else]Business Associate[/if]/vendor representative’s need for such access ends.[/if]
+
+## 4. Access Control Requirements
+
+1. All users must use a unique ID to access [q#2] systems and applications.
+1. Passwords must be set in accordance with the _[q#2] Password Policy_.
+1. Alternative authentication mechanisms that do not rely on a unique ID and password must be formally approved by the ISO or designee.[if condition='q#337=Yes && q#305=Yes']
+1. Remote access to [q#2] systems and applications must use two-factor authentication (2FA) where possible.[/if]
+1. System and application sessions must automatically lock after [if condition='q#1728=Yes']the length of inactivity as determined by the cloud provider[else]$lower_case([q#478]) of inactivity, where supported by the system or application[/if].
+1. Access rights will be immediately disabled or removed when the user is terminated or ceases to have a legitimate reason to access [q#2] systems.
+1. Existing user accounts and access rights will be reviewed at least annually to detect dormant accounts and accounts with excessive privileges. Examples of these include:
+    1. An active account assigned to [if condition='q#7>=1'][if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] or vendors[else][if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if], vendors, or employees[/if] that no longer work for $the_noun([q#3]);[if condition='q#7>=1']
+    1. An active account with access rights for which the user’s role and responsibilities do not require access (for instance, users that do not have the authority or responsibility to view PHI should not have access to systems with that information); 
+    1. System administrative rights or permissions (including permissions to change the security settings or performance settings of a system) granted to a user who is not an administrator;[/if] and
+    1. Unknown user accounts.
+
+# IX. Managing Data Sources
+
+## 1. Overview
+
+§§ 164.310(d)(2)(i), (iii), and (iv) require[if condition='q#120=Employer || q#120=Medical/Dental Provider'] Covered Entities and their [/if] Business Associates to implement reasonable safeguards to limit incidental uses and avoid prohibited uses and disclosures of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], including in connection with the disposal of such information. In addition, the HIPAA Security Rule requires entities to implement Policies and Procedures to address the final disposition of electronic [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and/or the hardware or electronic media on which it is stored, as well as to implement procedures for removal of electronic [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] from electronic media before the media are made available for reuse.
+
+## 2. Definitions
+
+_**Destroying**:_ Destruction of media so it cannot be reused.
+
+_**Disposal**:_ The act of discarding media; often done via recycling material containing “non-confidential” material.
+
+_**Purging**:_ Exposing the magnetic media to a strong magnetic field to disrupt the recorded magnetic domains; also known as degaussing.
+
+_**Reinitializing**:_ Reformatting drives so information cannot be retrieved by recovery utilities or any other forms including keystroke recovery attempts; achieved by overwriting the disk with zeros for no less than one time.
+
+_**Retention**:_ Length of time documentation and/or [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is retained.
+
+## 3. Policy
+1. [q#2] has Policies and Procedures to manage data sources and/or the hardware or electronic media on which it is stored. 
+1. [q#2] shall maintain a record of the physical movement of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and the person responsible. 
+1. Before moving any devices, [q#2] shall create a retrievable exact copy of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] to use when needed.
+
+## 4. Media Types
+
+$capitalize([q#2]) shall protect media and documents containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] from inception through disposition. Regardless of the owner relationship, [q#2] will track electronic [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] (hard drives, flash drives, phones, tablets, etc.).
+
+## 5. Retention of Media
+
+1. $capitalize([q#2]) [if condition='q#1728=Yes']has inherited the data retention policies of the cloud provider[else]will retain [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] for at least six years[/if].[if condition='q#1728!=Yes || q#709!=Cloud Based || q#160!=Cloud Backups || q#55!=in the cloud']
+1. System/information owners should consult with the ISO to ensure compliance with the record retention regulations.[/if]
+
+## 6. Electronic Disposal Policy
+[if condition='q#241=No']As required by 164.310(d)(2)(ii), [q#2] will use the following procedures when media becomes obsolete, is no longer required, or is no longer usable:
+1. All obsolete media (e.g., hard drives, USB drives, etc.) will be reinitialized, purged, and/or destroyed[if condition='q#250=Yes'] by [q#251].
+    1. [q#258][/if][if condition='q#696=Yes']
+1. Any devices that are leased must be securely sanitized of all [q#2] data prior to being returned to the leasing company.[/if]
+1. All devices must be securely sanitized of all [q#2] data prior to being recycled or removed from the location.
+1. $capitalize([q#2]) shall maintain appropriate records of sanitization. This entails validating how, where, and when media is sanitized. [if condition='q#255=Yes']$capitalize([q#251]) or any vendor authorized to dispose of media on $possessive([q#2]) behalf will provide an asset disposal certificate.[/if][else][if condition='q#242=No, I will input the information once my Policies and Procedures are finalized']
+
+As noted in the Risk Assessment, [q#2] will input this information after these Policies and Procedures are finalized.[else]
+
+TH to input
+[/if][/if]
+
+# X. Information Sharing and Privacy
+
+## 1. Overview
+
+The sharing and use of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] are governed by law (§ 164.308(a)(4)), regulation, and [if condition='q#120=Agency']client[/if][if condition='q#120=Employer Group || q#120=Business Associate']employee[/if][if condition='q#120=Medical/Dental Provider']patient[/if] expectations. 
+
+## 2. Policy
+[if condition='q#7>=1']$capitalize([q#2])[else]Employees[/if] will comply with all applicable laws and regulations regarding the privacy of personal information, including such laws as the:
+1. Health Insurance and Portability and Accountability Act (HIPAA)
+1. Health Information Technology for Economic and Clinical Health (HITECH)
+1. HIPAA Omnibus Ruling[if condition='q#120=Employer Group || q#44=Yes && q#7>50']
+1. Employment Retirement Income Security Act (ERISA)
+1. Family Medical Leave Act (FMLA)
+1. American with Disabilities Act (ADA)
+1. Department of Labor privacy standards
+1. Fair Credit Reporting Act (FCRA)[/if]
+
+## 3. Release of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]
+
+1. $capitalize([q#2]) [if condition='q#7>=1']employees, [/if][if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if], vendors, and suppliers may come into possession of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] as a part of their relationship with $the_noun([q#3]). Each must comply with all laws, regulations, and policies and ensure such information is properly protected.
+
+1. To ensure [q#2] meets those requirements, no [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will be shared with outside companies, vendors, or personnel without written approval from $the_noun([q#3]).
+
+# XI. Risk Analysis and Management
+
+## 1. Overview
+
+Risks to an organization's assets and environment should be addressed proactively rather than reactively. The controls applied to the risks must also be periodically reviewed to ensure the controls are working properly and efficiently.
+
+As required by § 164.308(a)(1)(ii)(a), an organization must conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+
+Risks may be accepted, avoided, or mitigated when:
+
+1. Accepting the risk is appropriate when the cost of avoiding or mitigating the risk is greater than the expected loss. The losses considered should include the less tangible items such as reputation, loss of market share, and loss of public trust.
+1. Avoiding the risk is appropriate when the cost of insurance is less than the cost of incremental controls. However, basic controls must always be in place.
+1. Mitigating the risk is appropriate in most situations. These situations are those where compensating controls are possible, cost-effective, and manageable. These mitigating controls may include:
+    1. Increasing protection to a level higher than what is listed in this document;
+    1. Improving oversight or monitoring of the risk to limit impact and minimize response time; and
+    1. Limiting transactions or other events to minimize the possible impact of the risk event.
+
+## 2. Policy
+The ISO or designee will review the Risk Assessment at least annually to ensure it is accurate and thorough and update as needed.
+
+## 3. Risk Reviews
+The ISO or designee is required to review risks and set requirements for controls. Risks should be reviewed or assessed when:
+
+1. Developing or deploying new applications[if condition='q#1728=Yes'], systems, networks, or software[/if];
+1. Significant changes are made to that same list;
+1. Business processes change significantly;
+1. $capitalize([q#2]) enters a new geographical area of business;[if condition='q#120=Agency']
+1. $capitalize([q#2]) enters a new line of business;[/if]
+1. Incidents occur or new risks emerge; or
+1. New regulations or standards are set.
+
+The method chosen for managing the risk (acceptance, avoidance, mitigation) must match the business value and costs involved and must be approved by the information owner.
+
+# XII. Authentication
+
+## 1. Overview
+
+All systems, applications, databases, or other [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] repositories shall require users to authenticate themselves prior to granting access. Authentication shall be via an approved password policy. In general, administrative, APIs, and Service IDs will use the most secure methods of authentication as required under §§ 164.312 (a) and (d), and other applicable federal, state, and/or local laws and regulations.
+
+[if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates are responsible for monitoring login attempts and reporting discrepancies and for creating, changing, and safeguarding passwords. [q#2] use these policies to verify the individual or entity is authorized to access [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] as required under § 164.312, 164.312 (d), and other applicable federal, state, and/or local laws and regulations.
+
+## 2. Policy
+[if condition='q#1728=Yes || q#709=cloud based || q#160=Cloud Backups'] [q#2] has inherited from their cloud providers their procedures for monitoring login attempts and reporting discrepancies and for creating, changing, and safeguarding passwords.[/if]
+
+[q#2] uses these policies to verify the individual or entity is authorized to access Protected Data.
+1. Format:
+    1. [if condition='q#298=Yes'][q#299][/if][if condition='q#295=No || q#298=No']Passwords must be at least 10 characters in length and must contain characters from three of the following four categories:
+        1. English uppercase characters (A through Z)
+        1. English lowercase characters (a through z)
+        1. Base 10 digits (zero through nine)
+        1. Non-alphabetic characters (for example, #, &, @, $)[/if]
+1. Rules:[if condition='q#304=Yes']
+    1. [if condition='q#7>=1']Users must create a new password[else]Users must create new passwords[/if] [if condition='q#1728=Yes']as mandated by the cloud providers[else][if condition='q#300=annually'][q#300][else]every [q#300][/if] as mandated by this policy[/if].[/if]
+    1. User[if condition='q#7>=1']s[/if] must never:
+        1. Save passwords on paper; 
+        1. Store any passwords[if condition='q#301=Yes'] (except in [q#302])[/if]; or
+        1. Share their passwords with other users. [if condition='q#305=Yes']
+    1. Users must use [q#306].[/if][if condition='q#301=Yes']
+    1. [q#302] is provided to securely store user passwords.[/if][if condition='q#301=Yes']
+    1. [q#302] is used by IT personnel to store administrative passwords.[/if] [if condition='q#458=Yes'] 
+    1. A maximum of [q#459] [if condition='q#459=one (1)']attempt[else]attempts[/if] will be permitted prior to disabling the account.[/if][if condition='q#460=Yes']
+    1. At the time the maximum number of attempts has been reached, an error message will be sent to IT.[/if]
+    1. New passwords must be different from [if condition='q#1728=Yes']the previous passwords as mandated by the cloud providers[else][if condition='q#303=all']all previous passwords[else][if condition='q#303=1']the previous password[else]the previous [q#303] passwords[/if][/if].[/if][if condition='q#304=Yes']
+    1. Passwords must be changed immediately upon first use of a new ID.[/if]
+    1. Compromised passwords will be changed immediately. 
+    1. Systems must not echo back the password as it is entered.
+    1. Passwords must not be retained by any system or application longer than is needed to grant access. 
+    1. Initial passwords must be transmitted separately from the ID unless transmitted by an encrypted or interactive medium.[if condition='q#7>=1']
+1. General employee access levels for information systems are [q#555].
+[/if]
+
+# XIII. Breaches or Impermissible Uses/Disclosures
+
+## 1. Overview
+
+Per § 164.402, a breach is an acquisition, access, use, or disclosure of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] in a manner not permitted by law which compromises its Security or Privacy. 
+
+## 2. Definitions
+
+_**Breach**:_ An impermissible acquisition, access, use, or disclosure which compromises the privacy or security of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+
+_**Incident**:_ Any breach of security, privacy, continuity, legal or regulatory controls over information assets of any type. Examples of such incidents include but are not limited to:
+
+1. Penetrations of systems, applications, networks, or databases;
+1. Denial of service attacks;
+1. Virus or other malware contamination;
+1. Transaction errors;
+1. Breaches of confidentiality agreements or contracts;
+1. Legal or regulatory violations;
+1. Loss of information confidentiality (data theft);
+1. Compromise of information integrity (damage to data or unauthorized modification);
+1. Theft of physical IT asset including computers, storage devices, printers, etc.;
+1. Damage to physical IT assets including computers, storage devices, printers, etc.;
+1. Misuse of services, information, or assets;
+1. Infection of systems by unauthorized or hostile software;
+1. Unauthorized changes to organizational hardware, software, or configuration;
+1. Reports of unusual system behavior; and/or
+1. Responses to intrusion detection alarms.
+
+## 3. Policy
+
+If a breach of unsecured [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is suspected or discovered, the ISO[if condition='q#7>=1'] or designee[/if] will attempt to mitigate the breach by following the procedures in the _$capitalize([q#2]) Incident and Breach Guide_.
+
+## 4. Additional State Requirements
+$capitalize([q#2]) will follow any applicable state reporting requirements found in the _[q#2] Incident and Breach Guide_.[if condition='q#7>=1']
+# XIV. Employee Security
+
+## 1. Overview 
+
+Proper verification checks must be made prior to granting any new employee, [if condition='q#120=Agency || q#120=Business Associate']BAS[else]BA[/if], vendor, agent, or affiliate access to private, internal, confidential, or protected information (§ 164.308(a)(3)(ii)(B))
+
+## 2. Policy
+[if condition='q#42=Outside Vendor']
+1. Verification checks are conducted by [q#43] on behalf of [q#2]. They will obtain written consent from applicants and employees prior to ordering reports and will provide a description of applicant and employee rights and all other documentation as required by law to each applicant or candidate in accordance with the Fair Credit Reporting Act (FCRA) the Americans with Disabilities Act (ADA), and all other applicable local, state, and federal laws and regulations. Applicants and employees may request and receive a copy of requested "investigative consumer reports." All background checks are subject to these notice and consent requirements.[/if][if condition='q#42=Internally']
+1. Verification checks will be conducted internally by [q#2]. The $capitalize([q#3]) will obtain written consent from applicants and employees prior to ordering reports and will provide a description of applicant and employee rights and all other documentation as required by law to each applicant or candidate in accordance with the Fair Credit Reporting Act (FCRA) the Americans with Disabilities Act (ADA), and all other applicable local, state, and federal laws and regulations. Applicants and employees may request and receive a copy of requested "investigative consumer reports." All background checks are subject to these notice and consent requirements.[/if][if condition='q#42=Outside Vendor || q#42=Internally']
+1.  [/if]Background check reports shall be maintained in separate, confidential files, and retained in accordance with $the_noun($possessive([q#3])) document retention procedures.
+
+## 3. Security Training and Awareness
+As required under § 164.308(a)(5)(ii), all employees will be properly trained on how to handle [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] prior to being granted access to it. 
+1. $capitalize([q#2]) will provide security training to each new employee with access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]. 
+1. At a minimum, this training will include the employee’s role in:
+    1. Managing malicious software (e.g., viruses);
+    1. Using workstation(s) securely (§ 164.310(b));
+    1. Managing passwords; and
+    1. Monitoring and reporting suspicious use of account(s).
+1. A record of successful completion of this training and annual retraining will be kept online by Total HIPAA Compliance, LLC.
+1. Employees will also be annually trained on [q#2] Policies and Procedures. The $capitalize([q#3]) will collect employee signatures attesting that they have completed this training.
+1. The ISO shall ensure that ongoing security training is developed and delivered for employees in response to environmental and operational changes impacting the security of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]; e.g., addition of new hardware or software, and increased threats.
+
+## 4. Policy
+
+Compliance with [q#3] policies regarding HIPAA Privacy and Security are a condition of employment.
+
+## 5. Acknowledgement
+
+All users shall be required to sign an acknowledgement after being trained on [q#3] Security and Privacy Policies.
+
+## 6. Exit Process for Users
+
+1. As required under § 142.308(a)(11), upon exiting any relationship with [q#2], all users who have been granted access to any [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] shall:
+    1. Relinquish all access to control devices;
+    1. Report all user IDs in use by the person;
+    1. Relinquish all information stored, whether on paper or on backup media; and
+    1. Relinquish all information processing devices, including workstations, all [q#3]-owned mobile devices, and others.
+1. All system access will be revoked. [if condition='q#556=PO']The PO[else]The ISO[/if] will verify termination is completed and document that this procedure has been followed.[/if]
+
+[if condition='q#7>=1']
+# XV. Security Sanction Policy
+
+## 1. Overview
+
+§ 164.530(e)(1) requires Covered Entities to provide appropriate sanctions against employees who fail to comply with these Policies and Procedures or the statute requirements.
+
+## 2. Definitions
+
+_**Availability**:_ Data or information that is accessible and usable upon demand by an authorized person.
+
+_**Confidentiality**:_ Data or information that is not made available or disclosed to unauthorized persons or processes.
+
+_**Integrity**:_ Data or information that has not been altered or destroyed in an unauthorized manner.
+
+_**Serious Infraction**:_ One that results in known significant damage or that threatens imminent significant damage. Other infractions are simple infractions.
+
+## 3. Procedures
+
+The [q#2] sanction process is intended as guidance for management in sanctioning Information Security Policy infractions. $capitalize([q#2]) reserves the right to implement sanctions differently if, in management’s judgment, the situation warrants it.
+
+Listed below are the types of violations that require sanctions to be applied from the _Health and Human Services. National Learning Consortium. Information Security Policy Template_. These are stated at Levels 1, 2, and 3; depending on the seriousness of the violation, Level 1 being the lowest and least serious, and Level 3 being the highest and most serious Level.
+  
+1. Examples of **Level 1 Violations**:
+    1. Accessing information not needed for job responsibilities
+    1. Sharing computer access; example, username & password
+    1. Leaving computer unattended while being able to access sensitive information
+    1. Disclosing sensitive information to unauthorized persons
+    1. Copying sensitive information without authorization
+    1. Changing sensitive information without authorization
+    1. Discussing sensitive information in a public area or in an area where unauthorized employees and/or the public could overhear
+    1. Discussing sensitive information with an unauthorized person
+    1. Failing/refusing to cooperate with the ISO[if condition='q#14=Yes'], Privacy Officer,[/if] Chief Information Officer, and/or authorized designee
+1. Examples of **Level 2 Violations**: 
+    1. Second occurrence of any Level 1 offense (does not have to be the same offense)
+    1. Unauthorized use or disclosure of sensitive information
+    1. Using another person's computer access code (username & password)
+    1. Failing/refusing to comply with a remediation resolution or recommendation
+1. Examples of **Level 3 Violations**: 
+    1. Third occurrence of any Level 1 offense (does not have to be the same offense)
+    1. Second occurrence of any Level 2 offense (does not have to be the same offense)
+    1. Obtaining sensitive information under false pretenses
+    1. Using and/or disclosing sensitive information for commercial advantage, personal gain, or malicious harm
+
+For the [q#3] Sanction Policy, see _$capitalize([q#2]) Privacy Policies and Procedures_: **"Sanctioning of Employees[if condition='q#120=Agency'], Agents,[/if] and Contractors."**
+[/if]
+
+# XVII. Malware and Antivirus
+
+## 1. Overview
+[if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates must have procedures for guarding against, detecting, and reporting malicious software, required under § 164.308(a)(5)(ii)(B).
+
+## 2. Definitions
+_**Antivirus**:_ Protective software designed to guard computers against malicious software.
+
+_**Malware**:_ Malicious software that may reside on a computer, steal information, or cause destruction; can include a virus, ransomware, Trojan Horse, keylogger, hijacker, or dialer.
+
+_**Patch**:_ Patches, also called updates or fixes, are typically small pieces of software that update firmware, applications, and operating systems (OS). Patches are primarily released to address bugs such as security vulnerabilities, stability problems, and performance issues. Some vendors also use updates to introduce new or enhanced features.
+
+## 3. Policy
+1. $capitalize([q#2]) uses [q#438] to monitor and remove malicious software from assets.
+1. Virus definitions are updated $lower_case([q#444]).[if condition='q#407=Never']
+1. At this time, [q#2] does apply patches or updates in a timely manner.[else]
+1. Patches and updates will be applied [if condition='q#407=Zero day (same day)']the same day as[else][if condition='q#407=Within a week']within one week of[else][if condition='q#407=Within a month']within one month of[else][if condition='q#407=Never']will not be applied after[/if][/if][/if][/if] the manufacturer’s release [/if]by [if condition='q#22=In-house IT Team'][if condition='q#227=ISO']the ISO[else][q#228][/if][/if][if condition='q#221=IT Vendor || q#221=Both']the IT Vendor[/if] or designee.[if condition='q#7>=1']
+1. To limit the risk of infection, no unauthorized software is permitted to be installed on any [q#2] computer, laptop, cell phone, smartphone, or internal system without the approval of the ISO. If additional software is required to be installed on any [q#3] electronic device, a request must be made to the [if condition='q#409=No']ISO[else]$get_contact_title([q#410]) or the ISO[/if].
+1. All employees are expected to be aware of the [q#2] software protocols and avoid disabling or removing software and services that may affect the privacy of information contained within. Any suspicion of a virus or any other unusual problems should be reported immediately to the ISO.[/if]
+
+## 4. Operating System Anti-Malware Requirements[if condition='q#405$=Mac OS']
+**macOS**
+
+Data entering [q#2] macOS-based systems must be subject to an up-to-date anti-malware scanning tool that is scheduled to run at regular intervals. In addition, all emails, attachments, disks, backup media, USB memory devices, and other data-carrying tools must be scanned before they are downloaded or allowed access to the system. All incoming data must be sandboxed by the anti-malware program before they are allowed access to the system.[/if][if condition='q#405$=Linux']
+
+**Linux Operating System**
+
+$capitalize([q#2]) has determined that performing anti-malware scanning on Linux OS is not necessary due to the low probability of encountering malware, the demand on computer processing power, and loss of productivity by the user. This policy will be reviewed annually or as needed to determine if this is still valid.[/if][if condition='q#405$=Windows OS']
+
+**Windows Operating System**
+
+Data entering [q#2] Windows-based systems must be subject to an up-to-date, anti-malware scanning tool that is scheduled to run at regular intervals. In addition, all emails, attachments, disks, backup media, USB memory devices, and other data-carrying tools must be scanned before they are downloaded or allowed access to the system. All incoming data must be sandboxed by the anti-malware program before they are allowed access to the system.
+[/if][if condition='q#309$=iPhones']
+
+**iOS (iPhone Operating Systems)**
+
+$capitalize([q#2]) has determined that performing anti-malware scanning on iPhones is unnecessary due to the low probability of encountering malware, the demand on computer processing power, and loss of productivity by the user. This policy will be reviewed annually or as needed to determine if this is still valid.[/if][if condition='q#309$=Android']
+
+**Android Operating Systems**
+
+All such devices must have anti-malware tools in place prior to being connected to [q#2] networks. These systems must be subject to an up-to-date anti-malware scanning tool that is scheduled to run at regular intervals. In addition, all emails, attachments, and SD cards must be scanned before they are downloaded or allowed access to the system.[/if]
+
+## 5. Subcontractors and Service Providers
+
+$capitalize([q#2]) and all Business Associates, consultants, vendors, representatives, or other service providers must have adequate controls in place to guarantee that data coming from their systems and networks is free from malware.
+
+## 6. Infected Devices
+
+$capitalize([q#2]) will use approved tools to monitor and remove malicious software from [q#3] assets. Virus-infected computers, tablets, or phones must be removed from the network immediately until they are verified as virus-free.[if condition='q#7>=1']
+## 7. Procedures
+1. Employees will:
+    1. Not load software on [q#3] information equipment without written permission from the ISO or other authorization by Policy or Security Standard;
+    1. Not open electronic files from unfamiliar sources; and
+    1. Limit web surfing to approved sites for:
+        1. $capitalize([q#3])-related business; or
+        1. Limited personal business (e.g., paying bills and making reservations).
+1. Employees will be trained to carry out these malware protections.
+
+## 8. Enforcement
+
+Any activities with the intention to create and/or distribute malicious programs into [q#2] networks (e.g., viruses, worms, Trojan Horses, email bombs, etc.) are prohibited, and the user will be subject to $the_noun([q#3]) Sanction Policy and reported to the proper state and federal authorities.[/if]
+
+# XVIII. Change Control Logs
+
+## 1. Overview
+
+[if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates are required to maintain audit controls of systems that document any changes and access users may have to sensitive systems[if condition='q#1728=Yes'] as[else]. They are required to install hardware, software, and procedural mechanisms that record and examine activity in information systems that contain or use [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if],[/if] required under § 164.312(b), and other applicable federal, state, and/or local laws and regulations. [if condition='q#1728=Yes']The following are the retention policies for these logs.[/if]
+
+## 2. Definition
+
+_**Change Log**:_ A type of documentation that contains the list of changes that are made to a specific project, action, etc.
+
+## 3. Policy
+**Cloud Logs**
+
+[q#2] has inherited the log retention policies of the cloud providers.
+[if condition='q#1728=Yes']$capitalize([q#2]) has inherited the log retention policies of the $possessive([q#3]) cloud provider.[else]
+[if condition='q#369=Yes || q#160=Backups To Removable Media (Hard drives, Tapes, DVDs, Memory Sticks) || q#160=Backups To A Server']
+
+**Server Logs**
+1. Audit logs will be retained for a minimum of six years from the date of creation. They will be maintained up to one year in raw format, preferably electronic, to preserve evidence, and may be compressed for storage after one year. Audit logs must be configured to prevent overflow, erasure, or tampering. Audit logs will be configured to record information such that:
+    1. Sufficient information is available for proper investigation of use, misuse, incidents, and performance;
+    1. User ID, IP address, terminal number, or other identifying information;
+    1. Event type, date, and time;
+    1. Time is according to a known time stamp so that events across systems can be coordinated;
+    1. End-to-end accountability is always maintained.
+1. Events to be recorded include, but are not limited to:
+    1. Login and activity by any privileged accounts (e.g., reading, displaying, and writing);
+    1. Changes to operating systems, application code or other tools;
+    1. Backup and restore events;
+    1. Changes affecting any cryptographic keys or devices;
+    1. Stop or start of critical processes;
+    1. Retrying transaction failures or duplication.[/if]
+1. All systems and tools involved in the protection process are required to always have change logs enabled and properly configured. This includes:[if condition='q#261=Yes']
+    1. Firewalls;[/if][if condition='q#379=Yes']
+    1. Email servers;[/if]
+    1. Anti-malware tools especially the administration tools;
+    1. Security administration tools such as password resets and account modifications;
+    1. Monitoring tools; and
+    1. Routers and other network devices.
+1.   Logs will be reviewed and analyzed by the ISO[if condition='q#7>=1'] or designee[/if] as needed.
+1.   Reports of problems and incidents will follow the incident reporting method, listed in the _$capitalize([q#2]) Incident and Breach Guide_.[/if]
+
+# XIX. Encryption Management
+
+## 1. Overview
+
+To comply with § 164.312(a)(2)(iv), encryption of all [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is vital.
+
+## 2. Definitions
+
+_**Encryption**:_ Procedure used to convert data from its original form to a format that is unreadable and/or unusable without a key or password needed to reverse the encryption process.[if condition='q#308=Mobile Phones/Smart Phones'][if condition='q#309$=iPhones']
+
+_**Jailbreaking**:_ The process of allowing users of smartphones, tablets, and other devices running the Apple iOS mobile operating system to attain privileged control over various iOS subsystems.[/if][if condition='q#309$=Android']
+
+_**Rooting**:_ The process of allowing users of smartphones, tablets, and other devices running the Android mobile operating system to attain privileged control (known as root access) over various Android subsystems.[/if][/if]
+
+## 3. Application Encryption Policy
+[if condition='q#1728=Yes']$capitalize([q#2]) has inherited the encryption policies of the $possessive([q#3]) cloud provider.
+[else][if condition='q#208=Yes']
+1. [q#2] has inherited the encryption standards of the cloud providers.
+1. All [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] on the server is encrypted using a minimum of 128-bit encryption.
+1. $capitalize($possessive([q#2])) encryption key length requirements shall be reviewed once a year as part of the annual security review and upgraded as technology allows.[else]
+1. $capitalize([q#2]) does not encrypt all [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] at this time.[/if]
+1. The use of proprietary encryption algorithms is not allowed for any purpose unless it is approved by [q#2].[/if]
+
+## 4. Device Encryption Policy
+1. $capitalize([q#2]) requires devices to have encryption enabled for any files, folders, drives, or databases that contain [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+1. Encryption keys will be managed by the ISO[if condition='q#7>=1'] or designee[/if] or using software authorized for this purpose by the ISO.[if condition='q#307=Yes']
+1. $capitalize([q#2]) allows the following personal devices to access [if condition='q#1729=Yes']systems[/if][if condition='q#1728=Yes'][if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if][else][q#2][/if]: [if condition='q#308=mobile phones/smart phones']
+    1. Mobile Phones[/if][if condition='q#308=smart watches']
+    1. Smart Watches[/if][if condition='q#308=tablets']
+    1. Tablets[/if][if condition='q#308=external hard drives or flash drives']
+    1. External hard drives or flash drives[/if][if condition='q#308=personal laptop']
+    1. Personal Laptop[/if]
+1. Devices can access [q#316] and must have the appropriate encryption.[if condition='q#325=We use an access authorization form to document the device has been granted access']
+    1. [q#2] uses an access authorization form to document the device has been granted access.[/if].[if condition='q#325=IT configures the device before it is allowed on our network']
+    1. IT configures the device before it is allowed on our network.[/if][if condition='q#326=Yes']
+1. [q#327][q#327].[/if]
+1. Approved devices must have a power-on password, PIN, or biometric password (facial recognition, fingerprint, etc.) that meet $possessive([q#2]) password policy.
+[/if][if condition='q#405$=Mac OS']
+**macOS Devices**
+
+macOS devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], are required to use full disk encryption using FileVault2. The encryption key will be maintained in a secure location by [if condition='q#7>1']both the user and [/if]the ISO.
+
+For devices that do not store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], full disk encryption is at the discretion of the user. However, if encryption is used, a copy of the encryption key will be stored by [if condition='q#7>=1']both the user and [/if]the ISO in a secure location.[/if][if condition='q#405$=Windows OS']
+**Windows OS Devices**
+
+Windows OS devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] are required to use full disk encryption. $capitalize([q#2]) uses BitLocker to encrypt Windows devices. The encryption keys will be maintained in a secure location by [if condition='q#7>=1']both the user and [/if]the ISO.
+
+For devices that do not store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], full disk encryption is at the discretion of the user. However, if encryption is used, a copy of the encryption keys will be stored by [if condition='q#7>=1']both the user and [/if]the ISO in a secure location. [/if][if condition='q#405$=Linux']
+**Linux OS Devices**
+
+Linux devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] are required to use full disk encryption. The encryption key will be maintained in a secure location by [if condition='q#7>=1']both the user and [/if]the ISO.
+
+For devices that do not store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], full disk encryption is at the discretion of the user. However, if encryption is used, a copy of the encryption key will be stored by [if condition='q#7>=1']both the user and [/if]the ISO in a secure location.[/if][if condition='q#309$=Android']
+**Android Devices**
+
+All Android devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will have encryption turned on and are required to be password and/or biometrically protected at all times. The encryption key will be maintained in a secure location by [if condition='q#7>=1']both the user and [/if]the ISO. Rooted devices are not allowed on the [q#3] network.[/if][if condition='q#309$=iPhones']
+**iPhones, iPads, Apple Watches**
+
+iPhones, iPads, and Apple Watches are natively encrypted. These devices are required to be password and/or biometrically protected at all times. Jailbroken devices are not allowed on $the_noun([q#3]) network.[/if][if condition='q#275=Wireless && q#1729=Yes']
+## E. Wi-Fi Network Encryption
+[if condition='q#285=Yes']
+All wireless access points owned by [q#2] are required to be configured using Wi-Fi Protected Access 2-Enterprise (WPA2-Enterprise) with 802.1X authentication on a per-user basis.[/if] Any outside users are required to use guest access points.
+
+[if condition='q#7>=1 && q#337=Yes']
+Employees that access [q#2] resources from home are required to configure wireless access points using WPA2-PSK to protect their devices. Any preconfigured passwords on these devices should be set to unique passwords conforming to the [q#3] password policy. [if condition='q#287=Never']At this time, these passwords are not changed on a regular basis.[else]These passwords should be changed $lower_case([q#287]).[/if]
+[/if]
+[/if]
+
+## 5. Email Encryption Policy
+
+[if condition='q#75=No']
+At this time, [q#2] does not require the use of encryption to communicate [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and any potentially sensitive data.
+[else]
+$capitalize([q#2]) requires the use of [q#76] to encrypt and communicate [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and any potentially sensitive data.
+[/if]
+
+## 6. Miscellaneous Program Policy
+ [if condition='q#7>=1 && q#480=No']$capitalize([q#2]) forbids the use of unapproved programs for chat, texting, or instant messaging programs by devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[/if] [if condition='q#480=Yes && q#481=No']$capitalize([q#2]) authorized the use of chat, texting, or instant messaging programs, but not for programs that access or store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[/if] [if condition='q#480=Yes && q#481=Yes']$capitalize([q#2])has  authorized [q#482] for chat, texting, or instant messaging programs by devices that store [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[/if]
+
+# XX. Assessments and Testing
+
+## 1. Overview
+
+§§ 164.306(a)(2) and 164.316(a) mandate that [if condition='q#120=Agency']Business Associates[else]Covered Entities[/if] implement appropriate information Security Policies and Procedures to safeguard [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] from "reasonably anticipated threats and hazards."
+
+## 2. Definitions
+
+_**Penetration Testing**:_ The practice of testing a computer system, network, or Web application to find vulnerabilities that an attacker could exploit.
+
+_**Vulnerability Testing**:_ The process of discovering flaws in systems.
+
+[if condition='q#7>10']
+_**Wardriving**:_ (also called _Access Point Mapping_) The act of locating and possibly exploiting connections to wireless local area networks.
+[/if]
+
+## 3. Penetration Testing
+[if condition='q#289=No && q#384=No']At this time, [q#2] has determined that the cost versus the risk benefit to implement Penetration Testing is cost prohibitive. $the_noun($capitalize([q#3])) will reevaluate this policy in the future.[/if][if condition='q#289=No && q#369=No']At this time, [q#2] has determined that the cost versus the risk benefit to implement Penetration Testing is cost prohibitive. The $capitalize([q#3]) will reevaluate this policy in the future.[/if][if condition='q#289=Yes']
+1. [u]Web applications and network-connected devices:[/u] Penetration Testing will be conducted $lower_case([q#291]) on devices containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], using independent vendors, when determined to be reasonable and appropriate according to the ISO or designee.[/if][if condition='q#384=Yes']
+1. [u]Server[if condition='q#120=Employer'](s)[/if]:[/u] Penetration Testing will be conducted $lower_case([q#386]) on all servers containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], using independent vendors, when determined to be reasonable and appropriate according to the ISO or designee.[/if][if condition='q#289=Yes || q#384=Yes']
+1. Testing shall validate the security of:
+    1. External connections;
+    1. Operating systems;
+    1. Applications;
+    1. Databases;
+    1. Network controls; and
+    1. Security procedures, including monitoring and incident response.
+1. Penetration Tests will not be conducted except with the prior approval of the ISO.
+1. No user will have Penetration Testing tools loaded onto any [q#2] system without prior permission from the ISO.[/if]
+
+## 4. Vulnerability Assessment
+[if condition='q#292=No && q#387=No']At this time, [q#2] has determined that the cost versus the risk benefit to implement Vulnerability Assessments is cost prohibitive. The $capitalize([q#3]) will reevaluate this policy in the future.[/if][if condition='q#292=No && q#387=Yes']At this time, [q#2] has determined that the cost versus the risk benefit to implement Vulnerability Assessments on the network is cost prohibitive. The $capitalize([q#3]) will reevaluate this policy in the future.[/if][if condition='q#292=Yes']
+1. [u]Web applications and network-connected devices:[/u] Vulnerability Assessments are run $lower_case([q#294]). Any vulnerability found must be corrected in a timely manner.[/if][if condition='q#387=Yes']
+1. [u]Server[if condition='q#120=Employer'](s)[/if]:[/u] Vulnerability Assessments are conducted $lower_case([q#389]). Any vulnerability found must be corrected in a timely manner.[/if][if condition='q#292=Yes || q#387=Yes']
+1. Vulnerability Assessments shall also be conducted whenever:
+    1. A new system, application, or network is installed;
+    1. Changes are made to [if condition='q#261=Yes && q#344=Yes']firewalls, VPNs, or other[else][if condition='q#261=Yes']firewalls or other[else][if condition='q#344=Yes']VPNs or other[/if][/if][/if] security control tools;
+    1. Changes are made to a web server’s operating system;[if condition='q#379=Yes']
+    1. Changes are made to email servers; [/if][if condition='q#369=Yes']
+    1. Configuration changes are made to databases;[/if]
+    1. Configuration changes are made to critical applications; and/or
+    1. Changes are made to encryption scheme(s).
+1. Vulnerability Assessments will not be conducted except with the prior approval of the ISO.
+1. No user will have Vulnerability Assessment tools loaded onto any [q#2] system without prior permission from the ISO.[/if] [if condition='q#7>10']
+## 5. Wireless Access Testing
+Testing of wireless access points (War-Driving) shall occur regularly to cover all wireless access points under the control of [q#2].[/if]
+
+[if condition='q#7>=1']
+# XXI. Use of Email, Internet, Messaging, Public Sites, Blogs, Social Media
+## 1. Overview
+Users are responsible for ensuring that their use of email, internet, messaging, public sites, blogs, and social media  complies with all [q#2] policies, and with applicable laws and regulations. This includes all employment policies such as sexual harassment, stalking, ethics, and appropriate use.
+
+## 2. Policy
+These tools are the property of [q#2] and are to be used only for [q#3] business. Access may be unavailable at any time, at $the_noun($possessive([q#3])) discretion. Users must not assume that access to these tools will be available for incidental personal use.
+1. Employees may not store or display:
+    1. Sexually explicit material;
+    1. [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], except as meets the Handling Rules section;
+    1. Viruses;
+    1. Threats; or
+    1. Inappropriate or unlawful language, including:
+        1. Offensive language;
+        1. Language inappropriate for the [q#3] environment;
+        1. Discriminatory or harassing language; and
+        1. Tools usable for hacking, password cracking, vulnerability scanning or penetration testing.
+1. All content transmitted using these tools:
+    1. Is the property of $the_noun([q#3]);
+    1. May be inspected by $the_noun([q#3]) at any time; and
+    1. May be monitored, filtered, or blocked.
+1. Users of blogs, social media sites such as Facebook, and other such tools must:
+    1. Follow the guidelines outlined in the _$capitalize([q#2]) Social Media Policy_; and
+    1. Not represent their comments as coming from, or being representative of, the business or opinions of $the_noun([q#3]).
+
+[if condition='q#7>5']
+## 3. Logon Banner Policy
+All systems with access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will have a warning banner at login, which should state:
+    [if condition='q#465=Yes']
+    [q#466][else]
+    > The information on this system is confidential and is proprietary to [q#119]. Access to this system and network is limited to those approved 
+    by $the_noun([q#3]). All uses of information, applications and systems are monitored. No information may be copied or sent out of 
+    $possessive([q#2]) systems or networks without prior approval. Use of this system constitutes acceptance of these terms.[/if][/if]
+
+## 4. Voicemail Policy
+Although voicemail is password protected, an authorized administrator can reset the password and listen to voicemail messages.
+
+## 5. Email Policy
+The email system is the property of [q#2]. Email is backed-up and archived. Although email is password protected, an authorized administrator can reset the password and read emails.
+
+**Email Signatures**
+    Outgoing email messages with [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency 
+    || q#120=Business Associate']Protected Data[/if] must have a signature containing a disclaimer and notice, approved by $possessive([q#2]) 
+    legal counsel and by the ISO. The $capitalize([q#3]) email signature should state:
+    [if condition='q#467=Yes'][q#468][else]
+    The information contained in this communication is highly confidential and is intended solely for the use of the individual(s) to whom this 
+    communication is directed. If you are not the intended recipient, you are hereby notified that any viewing, copying, disclosure or distribution 
+    of this information is prohibited. Please notify the sender, by electronic mail or telephone, of any unintended receipt and delete the original 
+    message without making any copies.[/if]
+
+## 6. Social Media Policy
+
+Social Media includes all means of communicating or posting information or content of any sort on the Internet, including web logs or blogs, journals or diaries, personal websites, social networking or affinity websites, web bulletin boards, or a chat room, whether or not associated or affiliated with $the_noun([q#3]), as well as any other form of electronic communication. 
+
+1. Employees may not post [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] about [q#2][if condition='q#120=Agency || q#120=Business Associate'], clients,[/if][if condition='q#120=Medical/Dental Provider'], patients,[/if] other employees, or applicants.
+1. Employees may not post obscenities, slurs, or personal attacks that can damage the reputation of [q#2][if condition='q#120=Agency || q#120=Business Associate'], clients,[/if][if condition='q#120=Medical/Dental Provider'], patients,[/if] other employees, or applicants.
+1. Users of blogs, social media sites such as Facebook, and other such tools must not represent their comments as coming from, or being representative of, the business or opinions of [q#2].
+1. $capitalize([q#2]) may monitor content on the Internet. Policy violations may result in discipline up to and including termination of employment.
+[/if]
+
+[if condition='q#215=Yes || q#160=Cloud Backups || q#710=Yes || q#1728=Yes || q#55=in the cloud']
+# XXII. Cloud Computing Policy
+
+## 1. Overview
+
+This policy is meant to ensure that cloud services are not used without the ISO’s knowledge. [if condition='q#7>=1']Employees are prohibited from opening cloud services accounts or entering into cloud service contracts for the storage, manipulation, or exchange of [q#3]-related communications or [q#3]-owned [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] without the ISO’s approval. This is necessary to protect the integrity and confidentiality of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and the security of the [q#3] network.[/if]
+
+These guidelines are intended to establish a process whereby [if condition='q#7>=1'][q#2][else]the employees[/if] can use cloud services without jeopardizing [q#3] [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and computing resources.
+
+## 2. Policy
+
+1. Use of cloud computing services for work purposes must be formally authorized by the ISO by completing a required [if condition='q#120=Agency || q#120=Business Associate']BAS[else]Business Associate[/if] Agreement. The ISO will certify the security, privacy, and all other IT management requirements will be adequately addressed by the cloud computing vendor.
+    1. The use of such services must comply with $the_noun($possessive([q#3])) existing Acceptable Use Policy/Computer Usage Policy/Internet Usage Policy[if condition='q#307=Yes && q#7>=1']/BYOD Policy[/if].
+    1. The use of such services must comply with all laws and regulations governing the handling of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+1. The ISO will decide what data may or may not be stored in the cloud.
+1. Personal cloud services accounts may not be used for the storage, manipulation or exchange of [q#2]-related communications or [q#2]-owned [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].[if condition='q#1728=Yes']
+1. All [q#2] [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will be used, managed, and stored in the cloud. No local copies of Data are allowed on devices.
+[/if]
+## 3. Pre-Approved Cloud Computing Service
+
+The cloud computing service ([q#216][if condition='q#710=Yes'][q#708][/if][q#189]) has been approved by the ISO for storage, transmission, and handling of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] and is under contract for use by [if condition='q#7>=1'][q#2][else]employees[/if].[/if]
+
+# XXIII. Physical Device Security
+
+## 1. Overview
+To comply with §§ 164.310(a)(2)(i) and (ii), [if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates are responsible for maintaining an inventory of devices and, as such, shall employ software to aid in the management of hardware and software assets. Regardless of their location, onsite or remote, these must be secured in a manner that prevents them from being physically accessed without the appropriate level of security clearance.
+
+## 2. Definitions
+[if condition='q#369=Yes']
+_**Server**:_ Device that may or may not be housed onsite; regardless of location, they must be secured in a manner that prevents them from being physically accessed without the appropriate level of security clearance.[/if]
+
+_**Workstations**:_ PCs, desktop computers, tablets, and mobile computing devices located onsite, at a home office, or at remote locations; they are easily attacked and therefore must have access controls and anti-malware as specified in those sections of this document.
+
+## 3. Policy
+1. A current copy of the inventory of devices and a software log will be kept at an offsite location, so it can be accessed quickly in the case of theft, fire, flood, or other events where it may be useful.
+1. The ISO will ensure that a log of events is kept, noting when a device is repaired, replaced, installed, removed, modified, or maintained. This log will contain the who, what, when, where, and why of the change and be kept in the SDL.
+1. [if condition='q#7>=1']The ISO will[else]Users of these devices are required to[/if] ensure that all appropriate protections are in place, including:
+    1. Physical security to prevent theft or misuse;
+    1. Anti-malware;
+    1. Keeping the devices locked to a desk or other secure location when outside $the_noun([q#3]); and
+    1. Ensuring that the transport of these devices is secure and is safe from damage - for example, these devices should only travel in an appropriate case and should be locked and shut down during transit.  
+1. Devices of these types that are owned by [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if], vendors, or other third parties must meet all [q#2] requirements prior to being connected. 
+
+# XXIV. Firewalls and Network Configuration
+
+## 1. Overview
+
+Although § 164.312(c)(1) requiring[if condition='q#120=Employer || q#120=Medical/Dental Provider'] Covered Entities and their[/if] Business Associates to protect [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']ePHI[/if][if condition='q#120=Agency || q#120=Business Associate']electronic Protected Data[/if] doesn’t specifically mention firewalls, the security standards on which HIPAA is based detail what controls need to be in place to protect [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']ePHI[/if][if condition='q#120=Agency || q#120=Business Associate']electronic Protected Data[/if] from improper use, disclosure, or destruction. Since a firewall is a network security system that monitors and controls incoming and outgoing network traffic, they are an essential component of all information systems security infrastructure. They establish a control point where access controls may be enforced.
+
+## 2. Definitions
+
+[if condition='q#262=Software || q#262=Both'] _**Host Firewall**:_ A software application that monitors and controls incoming and outgoing network traffic. Examples include but are not limited to Symantec’s Norton Personal Firewall, Zone Labs’ ZoneAlarm, or native firewall functionality supplied under operating systems, e.g., macOS, Linux, Windows 8 (and higher).[/if][if condition='q#262=Hardware || q#262=Both']
+
+_**Network Firewall**:_ A hardware device built into a router or a stand-alone appliance that monitors and controls incoming and outgoing network traffic. All computing devices will access a network through this point.[/if]
+
+_**Network Hardening**:_ Usually the process of securing a system by reducing available ways of attack; typically includes the removal of unnecessary software, usernames or logins, and the disabling or removal of unnecessary services.
+
+## 3. Policy
+[if condition='q#7>=1']
+1. [/if]This policy applies to all firewalls on [q#2] networks[if condition='q#7>=1'], whether owned, rented, leased, or otherwise controlled or managed by [if condition='q#221=Both']employees and/or third parties[else][if condition='q#221=In-house IT Team']employees[else][if condition='q#221=IT Vendor || q#221=Both']third parties[/if][/if][/if][/if]. 
+1. $capitalize([q#2]) has installed secure [if condition='q#262=Software']host[/if][if condition='q#262=Hardware']network[/if][if condition='q#262=Both']host and network[/if] firewalls at all data access points.[if condition='q#7>=1']
+    1. [/if]Firewall specifications are documented and stored in the $possessive([q#3]) SDL.[if condition='q#7>=1']
+    1. Departures from this policy will be permitted only if approved in writing by the ISO.
+1. In some instances, systems such as routers, air gaps, telecommunications front ends, or gateways may be functioning as though they are firewalls when they are not formally known as firewalls. All [q#2] systems playing the role of firewalls, whether or not they are formally called firewalls, must be managed according to the rules defined in this policy. In some instances, this will require that these systems be upgraded so that they support the minimum functionality defined in this policy. [if condition='q#451=Zero (0)']The ISO is[/if][if condition='q#451=One (1)']The $get_contact_title([q#452]) and the ISO are[/if][if condition='q#451=Two (2)']The $get_contact_title([q#452]), $get_contact_title([q#453]), and the ISO are[/if][if condition='q#451=Three (3)'] The $get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), and the ISO are[/if][if condition='q#451=Four (4)']The $get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), $get_contact_title([q#455]), and the ISO are[/if][if condition='q#451=Five (5)']The $get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), $get_contact_title([q#455]), $get_contact_title([q#456]), and the ISO are[/if] responsible for monitoring software and system upgrades.
+[/if][if condition='q#7>2']
+## 4. Logging Policy
+1. Network logs include:[if condition='q#263=Yes']
+1. [q#264].[/if][if condition='q#263=No']
+    1. When anyone logs in by username and IP address;
+    1. The number of failed logins attempted on a computer;
+    1. The last time $the_noun([q#3]) conducted a software update;
+    1. Who downloaded a new program, and when;
+    1. When a user changes their password;
+    1. What information was accessed by the person logged in; and
+    1. What [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] was changed and by whom.[/if]
+1. The [if condition='q#1728=Yes'][q#189][else][if condition='q#265=Other'][q#266][else][q#265][/if][/if] is in charge of ensuring that these logs are reviewed[if condition='q#1728!=Yes'] $lower_case([q#698])[/if].
+1. $capitalize([q#2]) maintains network logs for [if condition='q#273=Under Six Years']fewer than six years[else]a minimum of six years[/if].[/if]
+
+## 5. Specific Requirements
+
+1. [u]Default to Denial or Whitelist:[/u] Every connectivity path and service that is not specifically permitted by this policy and supporting documents issued by the ISO must be blocked by [q#2] firewalls. The list of currently approved paths and services must be documented and distributed to all system administrators with a need to know by the ISO or designee.
+1. [u]External Connections:[/u] [if condition='q#1729=Yes']No computer system accessing [q#2] [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] [else]All in-bound, real-time Internet connections to [q#2] internal networks or multi-user computer systems must pass through a firewall before users can reach a logon banner. No [q#2] computer system [/if]may be attached to the Internet unless it is protected by a firewall.[if condition='q#277=Yes']
+1. [u]Intrusion Detection:[/u] All [q#2] firewalls must include intrusion detection systems approved by the ISO. Among other potential problems, these intrusion detection systems must detect unauthorized modifications to firewall system files and detect denial of service attacks in progress.[/if]
+1. [u]Regular Testing:[/u] Because firewalls provide such an important control measure for [q#2] networks, their strength and proper configuration must be tested on a regular basis.
+
+## 6. Network Connection
+
+[if condition='q#7>=1']$capitalize([q#2]) connects[else]Employees connect[/if] to the network through a $lower_case([q#275]).  [if condition='q#275=Wireless && q#285=Yes']The wireless network is encrypted using WPA2-AES.[/if]
+
+[if condition='q#262=Hardware || q#262=Both']
+## 6. Network Firewall
+
+1. [u]Disclosure of Internal Network Information:[/u] The internal system addresses, configurations, products deployed, and related system design information for [q#2] networked computer systems must be restricted such that both systems and users outside the [q#3] internal network cannot access this information.
+1. [u]Firewall Access Mechanisms:[/u] All [q#2] firewalls must have unique passwords or other access control mechanisms. The same password or access control code must not be used on more than one firewall. Whenever supported by the involved firewall vendor, those who administer [q#3] firewalls must have their identity validated through extended user authentication mechanisms.
+1. [u]Firewall Access Privileges:[/u] Privileges to modify the functionality, connectivity, and services supported by firewalls must be restricted to a few technically trained individuals with a business need for these same privileges. [if condition='q#7>=1'] All firewalls should have at least two employees or authorized [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] who are adequately trained to make changes, as circumstances require.[/if]
+1. [u]Posting Updates:[/u] Firewalls must be running the latest release of software to repel attacks. Where available from the involved vendor, all [q#2] firewalls must subscribe to software and firmware update services.
+1. [u]Secure Backup:[/u] Current offline back-up copies of firewall configuration files, connectivity permission files, firewall systems administration procedural documentation files, and related files must be kept close to the firewall at all times. A permissible alternative to offline copies involves online encrypted versions of these same files. Where systems software permits it, the automatic reestablishment of approved copies of these systems files must proceed whenever an unauthorized modification to these files has been detected.[if condition='q#7>=1']
+1. [u]Secured Subnets:[/u] Portions of the internal network that contain sensitive or valuable information, such as the computers used by the Human Resources/Benefits department, should employ a secured subnet. Access to this and other subnets should be restricted with firewalls or other access control measures. Based on periodic risk assessments, the ISO will define the secured subnets required in the Information Architecture.[/if][if condition='q#344=Yes']
+1.  [u]Virtual Private Networks (VPN)[/u]: To prevent unauthorized disclosure of sensitive and valuable information, all inbound traffic, with the exception of Internet mail, approved news services, and push broadcasts that access [q#2] networks, must be encrypted with the products approved by the ISO. These connections are often called Virtual Private Networks (VPNs). The VPNs permissible on the networks combine extended user authentication functionality with communications encryption functionality.[/if]
+1. [u]Virus Screening and Content Screening[/u]: Virus screening software approved by the information technology provider must be installed and enabled on all firewalls. Because the files passing through a firewall may be encrypted or compressed, firewall-based virus detection systems may not detect all virus-infected files. For this reason, virus screening software is also required at all [q#2] firewalls.[/if][if condition='q#344=Yes']
+## 7. VPN
+
+The VPN is configured internally by the [if condition='q#350=Yes']ISO[else]$get_contact_title([q#351])[/if][if condition='q#341=Yes'], and access points are tested [if condition='q#343=Other']$lower_case([q#343])[else]$lower_case([q#343])[/if][/if].
+
+Users are registered by the [if condition='q#348=Yes']ISO[else]$get_contact_title([q#349])[/if].[/if]
+[if condition='q#262=Software|| q#262=Both']
+## 8. Host Firewall
+
+$capitalize([q#2]) requires that devices have a host firewall activated at all times and set to default to denial or whitelist. This will require the user to authorize any connections to their device.[/if]
+
+## 9. Network Hardening
+
+1. Upon adding new devices to the network, installation procedures and set-up must be followed.
+1. Hardening will be done on network devices as well as systems (e.g., laptops, workstations[if condition='q#369=Yes'], and servers[/if]) and handled by the ISO or an approved designee, whenever there needs to be:
+
+    1. Preparation and installation;
+    1. Updates to software, firmware, and hardware;
+    1. Setting of appropriate account and auditing rules;
+    1. Setting of appropriate security rules;
+    1. Turning on or installing host firewall application;
+    1. Turning on full disk encryption (if device will have access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]); or
+    1. Other internal operations such as installation of appropriate software for workstation[if condition='q#369=Yes'], server,[/if] or laptop.
+
+[if condition='q#7>=1']
+1. The ISO will notify all affected employees when making changes to the hardening policy and will update these Security Policies and Procedures at that time. Written approval for hardening procedures above and beyond what is currently mandated is not necessary.[/if]
+
+# XXV. Physical Access and Environmental Security Policy
+
+## 1. Overview
+
+All physical access must be properly documented, authorized, and controlled. This Physical Protection Policy focuses on the appropriate access control methods needed to protect the full lifecycle of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] from insider and outsider threats.
+
+[if condition='q#1729=Yes']All [q#2] employees work remotely from their home offices. [/if]Under §§ 164.310(a)(2)(i) and (ii), [if condition='q#1729=Yes']they must safeguard their locations[else][if condition='q#120=Employer || q#120=Medical/Dental Provider'] Covered Entities and their [/if]Business Associates must safeguard the facility[/if] and the equipment therein from unauthorized physical access, tampering, and theft.
+
+[if condition='q#7>=1']
+## 2. Definitions
+_**Physical Security:**_ This may occur within sites, where the overall building is operated to a lower level of security, but a certain area is more controlled due to documents, assets or processes which occur in that area.
+ 
+_**Secure Sites:**_ Locations which require the highest level of protection, including:
+1. 	Computing centers;
+2. 	Network connection points;
+3. 	Media storage locations; and
+4. 	Locations containing platforms which carry high-value or critical information or transactions.[/if]
+
+## 3. Physical Access Policy
+[if condition='q#7>=1']Security awareness of all employees must be continually emphasized, reinforced, updated, and validated.[/if][if condition='q#7>=5']
+1. Employee facility access levels are reviewed bi-annually by the ISO.[/if] [if condition='q#7>50']
+1. An employee may be granted suite access levels above their role only at the discretion of their supervisor and the ISO.[/if]
+1. The outside doors of the building are kept locked during non-business hours. Access to the building is controlled through the use of [if condition='q#723=Standard Keys && q#723=Electronic Key Cards']standard keys and keycards[else][if condition='q#723=Standard Keys']standard keys[else][if condition='q#723=Electronic Key Cards']keycards[/if][/if][/if][if condition='q#723!=Electronic Key Cards && q#723!=Standard Keys && q#723!=Electronic Key Pads'][q#723][/if].[if condition='q#7>=1']
+    1. Entry will be granted to employees and [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] with a need for access to secure areas by the ISO[if condition='q#>1'] or designated official[/if][/if].[if condition='q#723=Standard Keys || q#723=Electronic Key Cards']
+    1. Lost or stolen [if condition='q#723=Standard Keys && q#723=Electronic Key Cards']keys and keycards[else][if condition='q#723=Standard Keys']keys[else][if condition='q#723=Electronic Key Cards']keycards[/if][/if][/if] must be reported to [if condition='q#724=ISO']the ISO[/if][if condition='q#724!=ISO'] the $get_contact_title([q#5729])[/if] immediately.[/if][if condition='q#740=Yes']
+1. Areas containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will be monitored during non-business hours.
+    1. Passwords to the alarm are assigned and maintained by [if condition='q#726=ISO']the ISO[else]the $get_contact_title([q#5729])[/if].
+    1. [if condition='q#724=ISO']The ISO[else]The $get_contact_title([q#5730])[/if] will be the contact in the event of a break-in.
+1. Areas containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will be secured during non-business hours.[/if]
+
+## 4. Visitor Policy
+A clear visitor policy is vital to the security of [q#2] employees, [if condition='q#120=Medical/Dental']patients,[else]clients,[/if] and workplace assets. It helps keep workers, equipment, and confidential information safe.[if condition='q#735=Yes, Documented || q#735=Yes, Not Documented']
+TH to input[else]
+1. Vendors and non-[q#2] employees must sign in and out on the entry log in the lobby, as well as be escorted at all times while on the premises.
+1. Visitors requiring internet access will be provided with a temporary username and password for the [q#2] guest network. At no time is a guest allowed to access the [q#2] main network with their laptop or another mobile device.
+1. $capitalize([q#2]) will maintain a log of visitors for a period of at least six years.[/if]
+
+[if condition='q#7>=1']
+## 5. Secure Sites Policy
+[if condition='q#732=No, I will input the information once my Policies and Procedures are finalized']As noted in the Risk Assessment, [q#2] will input this policy when the Policies and Procedures are finalized.[/if][if condition='q#732=Yes, I will share this for Total HIPAA to input']
+**TH to input**[/if][if condition='q#731=No']All physical security systems must comply with all applicable regulations such as, but not limited to, building and fire prevention codes. Secure sites shall be established for all locations where there is a concentration of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], systems, or networks.[/if][/if][if condition='q#369=Yes']
+
+1. The server[if condition='q#120=Employer'](s)[/if] is physically secured in [q#370], and will be locked at all times.
+    1. [if condition='q#371=ISO || q#371=IT Vendor '][q#371][/if][if condition='q#371=ISO && q#371=IT Vendor ']The ISO and the IT Vendor have access to the server.[/if][if condition='q#371=Other']In addition to the ISO, the following have access to the server, the:[if condition='q#5701=One']
+    1. $get_contact_title([q#372]).[/if][if condition='q#5701=Two']
+    1. $get_contact_title([q#372]); and
+    1. $get_contact_title([q#373]).[/if][if condition='q#5701=Three']
+    1. $get_contact_title([q#372]);
+    1. $get_contact_title([q#373]); and 
+    1. $get_contact_title([q#374]).[/if][if condition='q#5701=Four']
+    1. $get_contact_title([q#372]);
+    1. $get_contact_title([q#373]);
+    1. $get_contact_title([q#374]); and 
+    1. $get_contact_title([q#375]).[/if][if condition='q#5701=Five']
+    1. $get_contact_title([q#372]);
+    1. $get_contact_title([q#373]);
+    1. $get_contact_title([q#374]);
+    1. $get_contact_title([q#375]);and
+    1. $get_contact_title([q#376]).[/if][/if]
+1. Sites will be designed and operated according to best practices and in consideration of threats appropriate to the site such as severe weather, power outages, and intruders.
+1. This standard is not to be construed as a complete list of requirements for a secure site. It should be used in conjunction with expert advice, architects, fire marshals, OSHA, and other regulations.[if condition='q#7>5']
+    1. Separate, isolated areas will be created within the secure site for:[if condition='q#56=Yes']
+        1. Storage of physical [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if];[/if][if condition='q#701=Yes']
+        1. Electronic records containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if];[/if]
+        1. Media libraries;
+        1. Electrical supplies and controls; and
+        1.  Environmental and mechanical controls.
+     1. Access to these sub-areas will be on a need-only basis.
+    [/if]
+  [/if]
+
+## 6. Fire Protection
+
+1. Fire protection shall meet all regulations, including federal, state, and local.
+
+1. [if condition='q#7>=1']Operational areas within the secure site must not be used for eating, drinking, or smoking. [/if]Work areas are to be kept clean with no buildup of combustible materials.
+
+1. [if condition='q#732=Fire Suppression (Extinguishers, Sprinklers)']Fire extinguishers shall be deployed in accordance with regulations of OSHA and fire inspectors.[/if] Periodic testing of [if condition='q#732=Fire Detection (Smoke Alarm)']alarms[else][if condition='q#732=Fire Suppression (Extinguishers, Sprinklers)']fire extinguishers[/if][/if]and fire evacuation procedures shall be conducted.
+
+## 7. Environmental Controls
+
+Uninterruptible power supply and power sources have been installed according to the needs of the site. [if condition='q#520=Yes']Temperature and humidity shall be monitored.[/if]
+
+[if condition='q#7>=1 && q#337=Yes']
+# XXVI. Remote Access
+
+## 1. Overview
+
+This policy defines standards for remote access to information resources (networks, systems, applications, and data including but not limited to, electronic [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] received, created, maintained, or transmitted by the organization). The applicable Standards and Regulations addressed in this policy are §§ 164.312(a)(2)(iii), 164.308(a)(3)(ii)(B-C), and 164.308(a)(4)(ii)(B-C).
+
+## 2. Definitions
+
+_**Remote Access**:_ The ability to gain access to a network from outside the network perimeter. Common methods of communication from the remote computer to a network include, but are not limited to, [if condition='q#344=Yes']VPN, [/if]web-based Secure Socket Layer (SSL), Transport Layer Security (TLS), and other methods which employ encrypted communication technologies.
+
+_**Secure Socket Layer (SSL)**:_ A cryptographic protocol that provides communications security over a computer network.
+
+_**Transport Layer Security (TLS)**:_ A cryptographic protocol that provides communications security over a computer network.[if condition='q#344=Yes']
+
+_**Virtual Private Network (VPN)**:_ An encrypted point-to-point connection that allows employees to securely access networked items.[/if]
+
+## 3. Systems Access
+
+[if condition='q#356=all']
+All [q#2] systems are accessible through remote access.[else]
+The following [q#2] systems are accessible through remote access:
+[q#356].[/if]
+
+## 4. User Access Policy
+
+This policy applies to all authorized system users, including employees, Business Associates, and vendors, desiring remote connectivity to [q#3] networks, systems, applications, and data. Users are frequently categorized in one of these user groups:
+
+1. Employees with permanent remote access. These users are often Information Services (IS), executive, or specific administrative staff, business staff, providers, or teleworkers who require 24-hour system availability and are often called upon to work remotely or who often travel. Their remote access offers the same level of file, folder, and application access as their on-site access.[if condition='q#1729=Yes']
+1. Employees with temporary remote access. These users typically request short-term remote access due to an extended time away from the office, most frequently as a result of a short-term medical or family leave. Access for these users is usually restricted to only that which is necessary for task completion during time away from the office and may be limited.[/if]
+1. [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] and vendors offering product support with no access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]. These users have varied access depending upon the systems needed for application or system support but do not have access to any [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] in the applications or systems. These users access the system on an as-needed, or as-called-upon, basis for system troubleshooting.
+1. [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] and vendors offering product support and other Business Associates with access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if]. These users have varied access to [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] depending on the application or system supported and/or accessed.  Appropriate Business Associate Agreements must be on file prior to allowing access, and all such access must be audited on a regular basis.
+
+## 5. Remote Access Control Policy
+  [if condition='q#1729=Yes']
+1. All employees work remotely.[else]
+1. Remote access is strictly controlled and made available only to employees with a defined business need, at the discretion of the employee’s manager, and with approval by the ISO or designee.[/if]
+1. Each employee is responsible for adhering to all [q#2] Policies and Procedures, not engaging in illegal activities, and not using remote access for interests other than those of $the_noun([q#3]).[if condition='q#1729=Yes']
+1. [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] and vendors may be granted remote access to the network, provided they have a Business Associate Agreement and contract with [q#2] which clearly defines the type of remote access permitted (i.e., stand-alone host[if condition='q#369=Yes'], network server[/if], etc.) as well as other conditions which may be required, such as virus protection software. Such contractual provisions must be reviewed and approved by the ISO before remote access will be permitted.[/if]
+1. All users granted remote access privileges must sign and comply with the Confidentiality Agreement kept on file with the [if condition='q#44=No']the Privacy Officer[/if][if condition='q#559=Yes']the Privacy Officer[else]$get_contact_title([q#560])[/if].
+1. It is the [if condition='q#1729=Yes']employee[else]remote user[/if]’s responsibility to ensure that the remote worksite meets security and configuration standards established by [q#2]. This includes configuration of personal routers and wireless networks.
+
+**Equipment, Software, and Hardware**
+[if condition='q447!=Yes && q#449!=Yes']
+1. $capitalize([q#2]) will not provide any equipment or supplies.[else]
+1. $capitalize([q#2]) will not provide all equipment or supplies necessary to ensure proper protection of information to which the user has access. The following assists in defining the equipment and environment required.
+    1. $capitalize([q#3])-provided:[if condition='q#344=Yes']
+        1. VPN for accessing the [q#3] network;[/if][if condition='q#56=Yes']
+        1. If printing, $a_an([q#3]) [q#3]-supplied printer;[/if][if condition='q#449=Yes']
+        1. If approved by the ISO, $a_an([q#3]) [q#3]-supplied phone;[/if][if condition='q#344=Yes || q#56=Yes || q#344=Yes'] and[/if]
+        1. Encrypted workstation.
+    1. User-provided, as needed:[if condition='q#56=Yes']
+        1. Paper shredder;[/if][if condition='q#56=Yes']
+        1. A lockable file cabinet or safe to secure documents when unattended;[/if]
+        1. Secure office environment isolated from visitors and family; and
+        1. Broadband connection and fees.[/if]
+1. Remote users will[if condition='q#307=No'] only[/if] be allowed access systems and data[if condition='q#447=Yes'] through the use of equipment owned by [q#2][/if][if condition='q#307=Yes'] through the use of the employee’s personal computer system provided it meets the minimum standards developed by $the_noun([q#3]), as indicated above[/if].[if condition='q#307=Yes']
+1. Remote users utilizing personal equipment, software, and hardware are responsible for:
+    1. The installation or use of any necessary software and/or hardware. $the_noun($capitalize([q#3])) will bear no responsibility for lockups, crashes, or any type of data loss.[if condition='q#1729=Yes']
+    1. Remote access used to connect to the network must meet [q#3] requirements for remote access.[/if]
+    1. Purchase, setup, maintenance, or support of any [if condition='q#447=Yes']equipment not owned by $the_noun([q#3])[else]personal equipment[/if][/if][if condition='q#447=Yes']
+1. Continued service and support of [q#2]-owned equipment is completed by the ISO or designated official.[/if]
+1. Troubleshooting of phones or broadband is the primary responsibility of the remote user and their internet service provider.
+1. Documents that contain [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] shall be managed in accordance with [q#2] confidentiality and information security practices.
+
+**Security and Privacy**
+
+1. Only authorized users are permitted remote access to any [q#2] [if condition='q#1729=Yes'][if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if][else]computer [if condition='q#1728=No']systems, computer networks, and/or[/if] information[/if] and must adhere to all [q#2] policies.
+1. It is the responsibility of the remote user, including [if condition='q#120=Agency || q#120=Business Associate']BASs[else]BAs[/if] and vendors, to log-off and disconnect from the [q#2] network when access is no longer needed.
+1. Remote users shall lock the workstation and/or system(s) when unattended so that no other individual is able to access any [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] or organizationally sensitive information.
+1. Remote users are automatically disconnected from the [if condition='q#1728=Yes']cloud provider[else][q#3][/if] network when there is no recognized activity for [q#478].[if condition='q#1729=Yes']
+1. It is the responsibility of remote users to ensure that unauthorized individuals do not access the [q#2] network.[/if]
+1. At no time will any remote user provide or share their device username or password with anyone, nor configure their remote access device to remember or automatically enter their username and password.
+1. Remote users must take necessary precautions to secure all [q#2] [if condition='q#447=Yes']equipment and [/if]proprietary information in their possession.
+1. Virus detection software ([q#438]) is installed on all [if condition='q#447=Yes'][q#3] [/if]computers and is set to update the virus definitions as defined in the [q#2] Risk Assessment. Updates are critical to the security of all data, and must be allowed to complete; i.e., remote users may not stop the update process for virus protection on workstations.
+1. Use of a firewall is required at all times and may not be disabled for any reason.
+1. Copying of confidential information, including [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], to personal media (hard drive, USB, etc.) is strictly prohibited unless [q#2] has granted prior approval in writing.[if condition='q#1729=Yes']
+1. $capitalize([q#2]) maintains logs of all activities performed by remote users while connected to the [q#3] network. System administrators review this documentation and/or use automated intrusion detection systems to detect suspicious activity. 
+1. Accounts that have shown no activity for 30 days will be disabled.[/if]
+
+**Electronic Data Security**
+[if condition='q#344=Yes']
+1. Transferring data to [q#2] requires the use of the approved VPN connection to ensure the confidentiality and integrity of the data being transmitted. Users may not circumvent established procedures when transmitting data to [q#2].
+1. [/if]Remote users must use [q#76] encryption when emailing any [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+
+[if condition='q#56=Yes']
+**Paper Document Security**
+1. Remote users are discouraged from using or printing paper documents that contain [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if].
+1. Documents containing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] must be handled according to the [q#2] _Managing Data Sources Policy_.[/if] [/if]
+
+# XXVII. Software Usage and Acquisition Policy
+
+## 1. Overview
+
+Due to the applicability of IT solutions to an entity's intended environment, sensitivity of the data, and Security Policies, Procedures, and Standards, [if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their[/if] Business Associates may be required to purchase technology[if condition='q#1728=Yes'], additional hardware, software,[/if] or services needed to adequately secure [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] required under § 164.308(a)(1)(i).
+
+## 2. Definitions
+
+_**Exploit**:_ Software tool designed to take advantage of a hole, typically for malicious purposes such as installing malware in a computer system.
+
+_**Zero-Day Exploit**:_ An attack that takes advantage of a security flaw on the same day that the vulnerability becomes publicly or generally known; usually posted by well-known hacker groups; often, there isn’t yet a patch.
+
+_**Zero-Day Vulnerability**:_ Refers to a hole in software that is unknown to the vendor.
+
+## 3. Policy
+1. $capitalize([q#2]) purchases and licenses software from a variety of sources. Any duplication of software except as permitted by related licensing agreements is a violation of federal law and is therefore prohibited.[if condition='q#7>=1']
+1. Installing unauthorized software on a [if condition='q#369=Yes']computer system, workstation, or network server[else]computer system or workstation[/if] is forbidden.
+1. Employees that use computer systems for work-related purposes must agree to the following conditions for the use of software to:
+    1. Purchase, install, and/or use only software that has been authorized for use;
+    1. Obtain proper documentation for all work-related software purchases;
+    1. Abide by the terms of all license agreements as they pertain to the use of software on [q#3]-issued computers[if condition='q#307=Yes'], as well as on “at home" personal computer systems used for [q#3]-related work[/if];
+    1. Not reproduce or duplicate software, in any way, except as provided by the license agreement between $the_noun([q#3]) and the software manufacturer.
+1. Approval from [if condition='q#409=No']the ISO[/if][if condition='q#410=q#118']the ISO[/if][if condition='q#410!=q#118'] the $get_contact_title([q#410]) or the ISO[/if] must be obtained and documented to authorize the acquisition of software.[/if]
+    1. All software must be screened for malware prior to being installed.[if condition='q#7>=1']
+    1. Any unauthorized, illegally acquired, or unlicensed software must be removed.
+    1. Users of [q#3]-owned workstations, netbooks, wireless, and other devices must not install games or other unapproved software.[/if]
+
+[if condition='q#7>=1']
+## 4. Software Purchases
+Prior to purchasing any software, an authorized employee must adhere to the following procedures:
+1. A copy of the software license must be provided to [if condition='q#409=No']the ISO[/if] [if condition='q#410=q#118']the ISO[/if][if condition='q#410!=q#118'] the $get_contact_title([q#410]) or the ISO[/if] for completion of registration and inventory requirements.
+1. Licenses must be registered to [q#2] and not in the name of an individual end-user.[/if][if condition='q#398=Yes']
+
+## 5. Customized Software
+[if condition='q#392=ISO']The ISO[/if][if condition='q#392=IT Vendor']The IT Vendor[/if] is responsible for custom programs [q#391], which can access and store Protected Data.[/if][if condition='q#401=Yes']
+
+## 5. Open-Source Software
+
+The use of open-source software may only occur if:
+
+1. Prior to use it is fully tested and documented, and [q#2] employees are assigned to support it.
+1. Checks to be performed include:
+    1. Verify usage license (no strong or weak copy-left licenses);
+    1. Review open CVEs (Common Vulnerabilities and Exposures) and available patches;
+    1. Perform internal security evaluation;[if condition='q#289=Yes || q#384=Yes']
+    1. Flag for external security evaluation during next Penetration Test;[/if]
+    1. Document the source of the software[if condition='q#403=Yes']; and
+    1. The ISO approves of the use[else]; and
+    1. $capitalize($get_contact_title([q#404])) [if condition='q#7>=1']or designee [/if]approves of the use[/if].
+[/if]
+
+[if condition='q#7>=1']
+## 6. Duplication of Licenses
+
+Software shall not be duplicated, reproduced, or installed on more than one device without prior written authorization by the ISO. [if condition='q#307=Yes']If a software license states it is eligible and approved for home use, the following conditions must be adhered to:
+1. Use of the software is limited to [q#2] business; and
+1. The software must be removed from personal devices or the license deactivated if the individual is no longer employed by [q#2].[/if]
+[/if]
+
+## 7. Documentation
+Documentation for sensitive applications and the operating systems which run those systems shall be securely stored. Backups of all documentation shall be maintained off site. Access to the documentation for sensitive applications will be on a need-to-use basis.
+
+## 8. Change Control and Maintenance
+
+All change and maintenance processes shall include testing and validation that no security vulnerabilities have been introduced into software, including malware, back doors, violation of access rules, or other problems when the ISO [if condition='q#7>=1']determines[else]or designee determine[/if] that the change poses a significant security risk.
+
+## 9. Operating System
+
+Standardized operating procedures must be developed and used for installation, configuration, operation, and maintenance of operating systems. [if condition='q#447=Yes']Only approved operating systems will be loaded onto [q#2]-owned assets.[/if]
+
+1. The approved operating system(s) [q#405]  ([q#406]).
+1. [if condition='q#447=Yes']$capitalize([q#2]) systems[else]Workstations[/if] are reviewed [if condition='q#407=zero day (same day)']within a day[else]$lower_case([q#407])[/if] after a patch is released to ensure they are using the correct versions of operating systems and software.
+1. Before major upgrades to systems, authorization by [if condition='q#451=Zero (0)']the ISO[/if][if condition='q#451=One (1)']the $get_contact_title([q#452]) and the ISO[/if][if condition='q#451=Two (2)']the $get_contact_title([q#452]), the $get_contact_title([q#453]), and the ISO[/if][if condition='q#451=Three (3)']the $get_contact_title([q#452]), the $get_contact_title([q#453]), the $get_contact_title([q#454]), and the ISO[/if][if condition='q#451=Four (4)']the $get_contact_title([q#452]), the $get_contact_title([q#453]), the $get_contact_title([q#454]), the $get_contact_title([q#455]), and the ISO[/if][if condition='q#451=Five (5)']the $get_contact_title([q#452]), the $get_contact_title([q#453]), the $get_contact_title([q#454]), the $get_contact_title([q#455]), the $get_contact_title([q#456]), and the ISO[/if] will be required.[if condition='q#7>=1']
+1. Default settings will be communicated to all employees, or they will surrender their devices to the ISO for configuration.[/if]
+
+## 10. Applications
+
+1. All applications processing [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], whether developed or purchased, must comply with [q#2] policies and protection standards. The ISO is responsible for ensuring that these requirements are included during the development or acquisition of software.
+1. The protection requirements for applications include:
+    1. Access control;
+    1. Authorization;
+    1. Information classification;
+    1. Storage controls;
+    1. Backup and restoration;
+    1. Confidentiality and integrity requirements;
+    1. Audit logs; and
+    1. Privacy, export control, and other such requirements.
+
+[if condition='q#1728=Yes']
+## 11. Asset Management for Software
+The ISO is responsible for maintaining an inventory of software.[if condition='q#7>=1'] To ensure adherence with the software usage policy and related federal laws and statutes, [q#2] reserves the right to monitor software installations and usage on all computers owned by $the_noun([q#3])[if condition='q#307=Yes'], as well as any privately-owned computers when used to conduct [q#3]-related business[/if].[/if]
+[/if]
+
+## 12. Patching of Systems and Applications
+
+[if condition='q#451=Zero (0)']The ISO[/if][if condition='q#451=One (1)']The $get_contact_title([q#452]) and the ISO[/if][if condition='q#451=Two (2)']$get_contact_title([q#452]), $get_contact_title([q#453]), and the ISO[/if][if condition='q#451=Three (3)']$get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), and the ISO[/if][if condition='q#451=Four (4)']$get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), $get_contact_title([q#455]), and the ISO[/if][if condition='q#451=Five (5)']$get_contact_title([q#452]), $get_contact_title([q#453]), $get_contact_title([q#454]), $get_contact_title([q#455]), $get_contact_title([q#456]), and the ISO[/if][if condition='q#7>=1 && q#221=IT Vendor || q#221=Both'] or designee [/if] will evaluate all software and OS patches before they are applied; workstations will not automatically download OS patches and updates will not be automatically installed.[if condition='q#7>=1'] Installation of OS patches will be done within a planned downtime.[/if]
+
+Patching of applications is done on a weekly basis, unless a Zero-Day Exploit is found in an application.[if condition='q#7>=1'] If such an Exploit is found and a patch is released for said Exploit, an emergency planned down-time will be called for at the conclusion of the business day to patch the application in question.[/if]
+
+## 13. Clean Desk
+
+Users must comply with [q#2] policies regarding ‘clean desks’, ensuring that Confidential and Internal Use Information is secured at their desk when they walk away or at the end of the day.
+
+## 14. Clean Screen
+
+Users must comply with [q#2] policies regarding logging off their workstations; this is called a ‘clean screen’ policy. Computers will automatically timeout after $lower_case([q#478]).
+
+
+[if condition='q#360=Yes']
+# XXVIII. Removable Media Device Policy
+
+## 1. Purpose
+The purpose of this policy is to minimize the risk of loss or exposure of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] maintained by [q#2] when it is stored, transferred, or accessed on a removable media device. 
+
+## 2. Definition
+_**Removable Media**:_ Media that is readable and/or writable by the end user and are able to be moved from computer to computer without modification to the computer. This includes flash memory devices such as thumb drives, SD cards, cameras, MP3 players or any other storage medium; removable hard drives; optical disks such as CD and DVD disks.
+
+## 3. Policy
+[if condition='q#7>=1']
+1. [/if]All removable devices will use $the_noun($possessive([q#3])) encryption standard of [q#171]. In addition, all removable media must be scanned by antivirus software each time it is used on a workstation[if condition='q#369=Ye'] or server[/if].[if condition='q#7>=1']
+1. [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] should be stored on removable media only when required in the performance of assigned duties, or when responding to legitimate requests for information.
+
+1. Employees shall take all reasonable and prudent measures to physically secure all removable media on portable devices. They shall not open or attempt to open the encasement of any removable media or portable devices nor otherwise circumvent any lock system that secures the device or its components. Employees should take reasonable measures to secure the device at all times and report any lost or stolen removable media or portable devices immediately.
+
+1. Employees may not copy information or other sensitive data onto personal devices, unless approved by management in conjunction with the _Confidentiality Agreement for Employees_.
+
+1. Exceptions to this policy may be requested case-by-case by petition to the ISO.
+
+1. $capitalize([q#2]) reserves the right to refuse the ability to connect removable media devices to the [q#2] network if such media is being used in such a way that puts [q#2] systems, data, users, and customers at risk.[/if][/if]
+
+# XXIX. Data Recovery Policy/Backup Plan
+## 1. Overview
+[if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates must establish procedures to enable continuation of critical business processes for protection of the security of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] while operating in emergency mode[if condition='q#1728=Yes']. $capitalize([q#2]) has also implement procedures to identify preventive measures, create and maintain retrievable exact copies of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], as well as to restore any loss of data,[/if] as required under §§ 164.308(a)(7)(i), (7)(ii)(A-E),(a)(8) and other applicable federal, state, and/or local laws and regulations.[if condition='q#526=Yes']
+
+## 2. Policy
+[if condition='q#527=No, I will input the information once my Policies and Procedures are finalized']Refer to the _$capitalize([q#2]) Data Recovery Policy/Backup Plan_.
+1. All forms of backups, including full restoration of servers and individual files, have been tested. 
+1. The Disaster Recovery and Backup Policies are tested monthly.
+[else]
+**TH to input**[/if]
+[/if][if condition='q#1728=Yes']
+## 3. Definitions
+
+[if condition=''q#172=Full || q#160=Cloud Backups'] _**Full Backups**:_ A complete backup of all files on a device.[/if]
+[if condition='q#172=Differential || q#172=Incremental'] _**Differential/Incremental Backups**:_ A backup of files that have changed since the last full backup [/if]
+
+_**Non-Networked Workstations**:_ Workstations that are not always connected to the [q#3] network.
+
+## 4. Purpose
+1. $capitalize([q#2]) recognizes that the backup and maintenance of data is critical to the viability and operations of [q#2]. It is essential that certain basic standard practices be followed to ensure that data files are backed up on a regular basis.
+1. The purpose of this policy is to safeguard the information assets of [q#2] by:
+    1. Preventing the loss of data in the case of an accidental deletion or corruption of data, system failure, or disaster.
+    1. Permitting timely restoration of information and business processes, should such events occur.
+    1. Managing and securing backup and restoration processes and the media employed in the process.[/if]
+
+## 5. Policy
+[if condition='q#1728=Yes']$capitalize([q#2]) has inherited the Data Recovery, Data Retention, and Backup Plans of the $possessive([q#3]) cloud provider.[/if][if condition='q#1728=No'][q#2] will identify preventive measures and create and maintain retrievable exact copies of [if condition='q#120=Employer Group || q#120=Medical /Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if], as well as to restore any loss of data.
+1. All [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] is backed up to [q#160]. 
+1. Backups are encrypted using [q#171].[if condition='q#160=Cloud Backups']
+1. The [q#2] backup policy is inherited from [q#189]. Refer to [q#190].[else]
+1. All backups are [q#172].
+1. Workstation backups are performed [q#173].[if condition='q#160=Backups To A Server']
+1. Server backups are performed[if condition='q#160=Backups To A Server'] $lower_case([q#174])[/if][if condition='q#160=Backups To A Server'] to [q#175][/if].[/if]
+1. The [q#2] minimal backup policy mandates the following:
+    1. System and application software - All software, whether purchased or developed, is to be protected by at least one full backup which includes all updates.
+    1. Application data - All application data are backed up.
+    1. System data - System data are to be backed up with at least one generation per month.
+    1. Protocol data - All protocol data are to be protected by means of a full weekly backup using the three-generation principle.
+    1. Storage - All backup media must be stored in a safe and secure location extraneous to the location of the backed-up systems. [if condition='q#160=Backups To Removable Media (Hard drives, Tapes, DVDs, Memory Sticks)']All weekly backup media must be stored in a fireproof safe or offsite. All software full backup and monthly backup media must be stored in an off-site backup archive storage location. [/if][if condition='q#160=Backups To A Server']All weekly backup media must be stored in a fireproof safe or offsite. All software full backups and monthly backup media must be stored in an off-site backup archive storage location. [/if][if condition='q#160=Cloud Backups']$the_noun($capitalize([q#3])) stores all backed up media in the cloud using [q#189] as their chosen provider.[/if]
+    1. Software licenses and encryption keys necessary to activate both system and application software are backed up with at least one generation per week or daily if they change frequently.
+1. Data to be backed up or otherwise stored in accordance with [q#2] disaster recovery plans includes the following information:[if condition='q#369=Yes']
+    1. Server data;[/if]
+    1. User data stored on [if condition='q#7>=1']the ISO's laptop[else]workstations[/if];
+    1. System state data; and
+    1. Network information (e.g., firewall settings, log information, etc.). 
+1. Systems to be backed up include but are not limited to [q#160].
+1. Backup protocols[if condition='q#160=Cloud Backups']
+    1. Non-networked workstations will be backed up each time a workstation is connected to a known network.[else][if condition='q#160=Backups To A Server || q#160=Backups To Removable Media (Hard drives, Tapes, DVDs, Memory Sticks)']
+    1. Non-networked workstations will be backed up each time a workstation is connected to the [q#3] network.[/if][/if][if condition='q#160=Backups To Removable Media (Hard drives, Tapes, DVDs, Memory Sticks)']
+    1. Backups are stored on removable media.[/if][if condition='q#182=Yes']
+    1. Backups are stored in an off-site, secured location ([q#183]) and [if condition='q#177=Yes']automatically[/if] transferred there $lower_case([q#188])[if condition='q#177=Yes'].[else] by [if condition='q#186=Yes']the ISO[else] $get_contact_title([q#187])[/if].[/if][/if]
+1. $capitalize([q#2]) recognizes that the backup and maintenance of data is critical to the viability and operations of [q#2]. It is essential that certain basic standard practices be followed to ensure that data files are backed up on a regular basis.[if condition='q#193=Yes'] Data restoration testing is conducted $lower_case([q#195]).[/if][if condition='q#161=Yes']
+1. [if condition='q#163=Our IT Vendor']The ISO and IT vendor are[/if][if condition='q#163=One other person']The ISO and $get_contact_title([q#162]) are[/if][if condition='q#163=Two other people']The ISO, $get_contact_title([q#162]) , and $get_contact_title([q#165]) are[/if][if condition='q#163=Three other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), and $get_contact_title([q#164]) are[/if][if condition='q#163=Four other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), $get_contact_title([q#164]), and $get_contact_title([q#165]) are[/if][if condition='q#163=Five other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), $get_contact_title([q#164]), $get_contact_title([q#165]), $get_contact_title([q#166]) are[/if][else]
+1. The ISO is [/if] responsible for maintaining, updating, and testing this policy.
+  [/if]
+[/if]
+
+## 6. Restoration of Data
+[if condition='q#526=Yes']Refer to the _[q#2] Data Recovery Policy/Backup Plan_.[else]
+
+_**Emergency Recovery**:_  [if condition='q#7>=1']The ISO[else]Systems employees[/if] will make every attempt to recover the data within a business day. However, in the event of a catastrophic event, such as fire damage, services and data may be unavailable for an extended period of time.
+  
+_**Non-emergency Recovery**:_ These restorations will be performed on a time available basis and will occur within five business days.[if condition='q#7>=1']
+
+1. If the employee needs to restore a file, they will make a written or electronic request stating the date and the time the data was deleted to [if condition='q#532=No || q#531=No']the ISO.[/if][if condition='q#533=One']the ISO and $get_contact_title([q#534]).[/if][if condition='q#533!=None && q#533!=One'] the following:[if condition='q#533=Two']
+    1. $get_contact_title([q#534])
+    1. $get_contact_title([q#535])[/if][if condition='q#533=Three']
+    1. $get_contact_title([q#534])
+    1. $get_contact_title([q#535])
+    1. $get_contact_title([q#536])[/if][if condition='q#533=Four']
+    1. $get_contact_title([q#534])
+    1. $get_contact_title([q#535])
+    1. $get_contact_title([q#536])
+    1. $get_contact_title([q#537])[/if][if condition='q#533=Five']
+    1. $get_contact_title([q#534])
+    1. $get_contact_title([q#535])
+    1. $get_contact_title([q#536])
+    1. $get_contact_title([q#537])
+    1. $get_contact_title([q#538])[/if][/if]
+1. [/if]Needed backup data will not be restored “on top of” the current “bad” data. The restorations will be redirected to a new location, and first verified. Upon verification, the “bad” data will be removed from the drive and stored and relabeled as “old data”. Then the backup data will replace the “old data” on the drive. Once the restored data has been verified once more, the “old data” will be destroyed.[/if]
+
+## 7. Emergency Operations Plan
+[if condition='q#495=Yes']Refer to the $capitalize([q#2]) Disaster Recovery Plan. [else]
+1. When the [q#2] system is unavailable:
+    1. The ISO will activate the Disaster Recovery Plan; [if condition='q#56=Yes']
+    1. [if condition='q#7>=1']The ISO[else]Employees[/if] will use paper when feasible; [/if]and
+    1. If the outage looks like it will last for more than a few hours, operations may have to be discontinued.
+1. When the system is available again:
+    1. [if condition='q#7>=1']The ISO[else]Employees[/if] will update the online information;
+    1. The ISO[if condition='q#7>=1'] and designated employees[/if] will determine which devices/software are not functioning normally; [if condition='q#161=Yes']
+    1. [if condition='q#163=Our IT Vendor']The ISO and IT vendor [/if][if condition='q#163=One other person']The ISO and $get_contact_title([q#162])[/if][if condition='q#163=Two other people']The ISO, $get_contact_title([q#162]) , and $get_contact_title([q#165])[/if][if condition='q#163=Three other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), and $get_contact_title([q#164])[/if][if condition='q#163=Four other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), $get_contact_title([q#164]), and $get_contact_title([q#165])[/if][if condition='q#163=Five other people']The ISO, $get_contact_title([q#162]) , $get_contact_title([q#165]), $get_contact_title([q#164]), $get_contact_title([q#165]), $get_contact_title([q#166])[/if][else]The ISO [/if]will recover devices that need to be recovered; and
+    1. After all the non-functioning assets have been restored, [if condition='q#7>=1']the ISO[else]designated employees[/if] will update the systems using the written data.
+1. $capitalize([q#2]) will continue with normal operations.[/if] [if condition='q#495=No']
+
+## 8. Testing and Revision Plan
+[if condition='q#195!=Quarterly']Minimum of bi-annually, after[else]After[/if] doing a full backup, [if condition='q#196=No || q#193=No']the ISO [if condition='q#12=IT Vendor']or IT Vendor[/if][/if][if condition='q#197=One']The ISO and $get_contact_title([q#198]) are[/if][if condition='q#197=Two']The ISO, $get_contact_title([q#198]) , and $get_contact_title([q#199]) are[/if][if condition='q#197=Three']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), and $get_contact_title([q#200]) [/if][if condition='q#197=Four']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), and $get_contact_title([q#201]) [/if][if condition='q#197=Five']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), $get_contact_title([q#201]), $get_contact_title([q#202])[/if] will recover the saved data onto another hard drive. [if condition='q#7>=1']This test will only occur during hours when the business is closed. [/if][if condition='q#196=No || q#193=No']the ISO [if condition='q#12=IT Vendor']or IT Vendor[/if][/if][if condition='q#197=One']The ISO and $get_contact_title([q#198]) are[/if][if condition='q#197=Two']The ISO, $get_contact_title([q#198]) , and $get_contact_title([q#199]) are[/if][if condition='q#197=Three']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), and $get_contact_title([q#200]) [/if][if condition='q#197=Four']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), and $get_contact_title([q#201]) [/if][if condition='q#197=Five']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), $get_contact_title([q#201]), $get_contact_title([q#202])[/if] will operate the information system using this recovered data in a test mode.
+1. The tests will consist of a set of tasks that are designed to exercise the main system functions to confirm that the data is usable and [if condition='q#195=daily']up-to-date[else]as up-to-date as expected given the backups that were used to do the recovery[/if].
+1. If the process does not work as documented in the [q#2] policy, it will be updated to reflect the actual procedure needed to implement and achieve successful recovery and operation.[if condition='q#195=daily']
+1. Whenever making changes to software or hardware, [if condition='q#196=No || q#193=No']the ISO[else]
+
+[if condition='q#196=No']the ISO[/if][if condition='q#197=One']The ISO and $get_contact_title([q#198]) are[/if][if condition='q#197=Two']The ISO, $get_contact_title([q#198]) , and $get_contact_title([q#199]) are[/if][if condition='q#197=Three']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), and $get_contact_title([q#200]) [/if][if condition='q#197=Four']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), and $get_contact_title([q#201]) [/if][if condition='q#197=Five']The ISO, $get_contact_title([q#198]) , $get_contact_title([q#199]), $get_contact_title([q#200]), $get_contact_title([q#201]), $get_contact_title([q#202])[/if][/if] will create/update and test them using the _Inventory of Information Assets_ and store this checklist in the Security Documentation Library.
+ [/if][/if]
+
+## 9. Backup Retention
+[if condition='q#160=Cloud Backups']The $possessive([q#3]) backup retention policy is inherited from [q#189]. Refer to [q#190].[else]
+Backup cycles are defined for daily, weekly, monthly and annual periods. A daily-generation full daily backup cycle involves retaining seven sets of backups (one week, SSMTWTF). Then the seventh daily backup is retained for one month, as part of a weekly backup cycle. The fourth weekly backup is retained for one year as part of a monthly backup cycle. End of fiscal year and yearly archive data backups should be generated in multiple copies and each copy stored in a distinct archive storage location. In this way, the risk of catastrophic loss is minimized at a reasonable media cost.
+
+Backups will be maintained for a minimum of [if condition='q#160=Cloud Backups || q#160=Backups To A Server || q#160=Backups To Removable Media (Hard drives, Tapes, DVDs, Memory Sticks)'][q#176] or [/if]30 days. End of year backups of [if condition='q#120=Employer Group || q#120=Medical/Dental Provider']PHI[/if][if condition='q#120=Agency || q#120=Business Associate']Protected Data[/if] will be maintained for six years for statutory purposes.
+
+The ISO [if condition='q#7>=1']or designee[/if] shall maintain a log of all backups undertaken. Logs of backups will be maintained for six years from the date the backup was executed for statutory purposes.[/if]
+
+# XXX. Security Incident Management Policy
+
+## 1. Overview
+The Security Incident Procedures standard at § 164.308(a)(6)(i) requires [if condition='q#120=Employer || q#120=Medical/Dental Provider']Covered Entities and their [/if]Business Associates to implement policies and procedures to address security incidents. The associated implementation specification for response and reporting at § 164.308(a)(6)(ii) requires an organization to identify and respond to suspected or known security incidents, mitigate, to the extent practicable, harmful effects of security incidents that are known, and document security incidents and their outcomes. 
+
+## 2. Policy
+
+[if condition='q#7>=1']
+1. To manage these incidents, [q#2] will train each employee to recognize the common telltale signs of a security incident. When an employee detects one of these signs, they will be responsible for notifying [if condition='q#7>11']their manager or [/if]the ISO.[if condition='q#1728=No']
+1. The ISO will maintain a set of tests to detect events in the system logs that may indicate security incidents. These tests will be conducted using a combination of various software tools run against the system log on a daily basis or whenever needed. The tests currently are:
+    1. Account creation/deletion;
+    1. High volume of unsuccessful login attempts;
+    1. Alerts from malware monitoring systems;
+    1. High volume of file or database access/creation/deletion activity for the time of day, or for day of the week;
+    1. Account activity at unusual times of the day or night;
+    1. Absence of expected log records of activity when expected;
+    1. Unusual level of record access for a given account; and
+    1. Account lockout due to excessive password retry failure.
+1. Daily logs will be reviewed as needed.
+1. When anomalies are discovered, the script will provide a report that is immediately brought to the attention of the ISO or designee as a potential security incident.[/if][/if]
+1. The ISO will determine[if condition='q#7>=1 || q#221=IT Vendor'], in consultation with [if condition='q#1728=Yes']the cloud provider[else]others[/if] if needed,[/if] whether an event is a security incident.
+1. The ISO[if condition='q#7>=1'] or designee[/if] will refer to the Breach Worksheet to determine the extent of the incident and what information has been compromised.
+
+## 3. Containment
+
+1. To prevent further intrusion or damage, the ISO[if condition='q#7>=1'] or designee[/if] may need to[if condition='q#1729=Yes'] change passwords.[else]:
+
+    1. Disconnect the affected system(s);
+    1. Change passwords;
+    1. Block ports or connections from IP addresses.[/if]
+1. To prevent re-infection, the ISO[if condition='q#7>=1'] or designee[/if] will take the following steps:
+    1. Determine how the intrusion happened, and the source — whether it was email, inadequate training, or an attack through a port or unneeded service and/or due to an unpatched system or application;[if condition='q#1729=Yes']
+    1. Close a port on a firewall;
+    1. Patch the affected system;
+    1. Shut down the infected system until it can be re-installed;
+    1. Re-install the infected system and restore data from backup. Be sure the backup was made before the infection;[/if]
+    1. Change email settings as needed;[if condition='q#7>=1']
+    1. Train users;[/if] and
+    1. Disable unused services on the affected system.
+
+## 4. Restoration of Affected Systems
+
+1. Once it has been determined how the attack or intrusion came about, [if condition='q#196=No || q#193=No']the ISO [if condition='q#12=IT Vendor']or IT Vendor[/if][/if][if condition='q#197=One']the ISO and $get_contact_title([q#198])[/if][if condition='q#197=Two']the ISO, $get_contact_title([q#198]), and $get_contact_title([q#199])[/if][if condition='q#197=Three']the ISO, $get_contact_title([q#198]), $get_contact_title([q#199]), and $get_contact_title([q#200]) [/if][if condition='q#197=Four']the ISO, $get_contact_title([q#198]), $get_contact_title([q#199]), $get_contact_title([q#200]), and $get_contact_title([q#201]) [/if][if condition='q#197=Five']the ISO, $get_contact_title([q#198]), $get_contact_title([q#199]), $get_contact_title([q#200]), $get_contact_title([q#201]), $get_contact_title([q#202])[/if] will restore affected systems to their original state, being sure to preserve evidence against the intruder[if condition='q#1728=Yes'] by backing up logs, or possibly the entire system[/if]. 
+1. Depending on the situation, restoring the system could include one or more of the following:
+    1. Re-installing the affected system(s) from scratch and restore data from backups;
+    1. Changing user passwords;
+    1. Hardening systems by turning off or uninstalling unused services;
+    1. Patching software and systems; and
+    1. Running real-time virus and intrusion detection.
+
+# XXXI. Security Plan Review Policy
+
+## 1. Overview
+Underlying security risks will change and the ability to manage risks will improve over time.
+
+## 2. Procedures
+1. _[q#2]  Security Policies and Procedures_ will be reviewed annually. 
+    1. The ISO will lead this review and involve others as needed
+    1. Documentation of the review will be contained in a document called _Annual Security Review_ and stored in the Security Documentation Library.
+1. At a minimum, the review process will consist of:
+    1. Evaluating changes in the last year that may affect $the_noun($possessive([q#3])) Security Policy. These will include changes in:
+        1. Number, sizes, or locations of [q#3] business sites;
+        1. Number of employees composition; [if condition='q#120=Agency']
+        1. Type of medical insurance;[/if]
+        1. Hardware/software; and
+        1. State or federal laws.
+    1. Reading each policy to determine how the changes may affect the practices driven by the policy.
+    1. Creating a list of changes in policies and/or procedures that $the_noun([q#3]) will carry out.
+    1. Developing and implementing any changes in Policies and Procedures on a timely basis.
+# Appendix
+[if condition='q#1728=No']
+# Appendix A: Change Control Logs
+
+The Change Logs are logs and reports that are reviewed, at a minimum, twice a year. They provide information on programs available[if condition='q#7>=1'] and which employees have access to which programs[/if]. Refer to the Document File _Change Logs for Security_ for the needed logs.
+
+1. Annual Security Review
+1. Database Change Control[if condition='q#7>=1']
+1. Employee Access Log[/if][if condition='q#56=Yes']
+1. File Room/Cabinet[/if]
+1. Incident Disaster Log
+1. Inventory of Information Assets
+1. Maintenance Log
+1. Media Sanitization
+1. Network Change Control
+1. Operating System Changes Audit[if condition='q#7>=1']
+1. Physical Entry Access[/if][if condition='q#360=Yes']
+1. Removable Mobile Device Management[/if][if condition='q#7>=1']
+1. System Access
+1. Workstation Log[/if][/if]
+
+# Appendix [if condition='q#1728=Yes']A[else]B[/if]: Disaster and Emergency Plans
+
+# I. Disaster Recovery Plan
+
+## 1. Overview
+
+A disaster is any event that affects an organization's information systems and, as a result, substantially interferes with business operations. Examples are fire, flood, hardware failure of critical elements, [if condition='q#369=Yes']servers,[/if] software failures, theft, chemical/radiation hazard, pandemic, and sabotage.
+
+## 2. Policy
+Emergency access to information systems is activated automatically.
+
+[if condition='q#501=Yes && q#502!=Zero']
+[q#2] has appointed an Emergency Planning & Crisis Management Team (EPCMT). In addition to the ISO and Privacy Officer, the other Team [if condition='q#502=One']Member is [q#503].[/if][if condition='q#502!=Zero && q#502!=One']Members are: [if condition='q#502=Two']
+1. [q#503]
+1. [q#504][/if][if condition='q#502=Three']
+1. [q#503]
+1. [q#504]
+1. [q#505][/if][if condition='q#502=Four']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506][/if][if condition='q#502=Five']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507][/if][if condition='q#502=Six']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507]
+1. [q#508][/if][if condition='q#502=Seven']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507]
+1. [q#508]
+1. [q#509][/if][if condition='q#502=Eight']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507]
+1. [q#508]
+1. [q#509]
+1. [q#510][/if][if condition='q#502="Nine"']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507]
+1. [q#508]
+1. [q#509]
+1. [q#510]
+1. [q#511][/if][if condition='q#502="Ten"']
+1. [q#503]
+1. [q#504]
+1. [q#505]
+1. [q#506]
+1. [q#507]
+1. [q#508]
+1. [q#509]
+1. [q#510]
+1. [q#511]
+1. [q#512][/if][/if]
+[/if]
+
+# II. Disaster Recovery Policy
+
+[if condition='q#495=Yes']_Refer to the [q#2] Disaster Recovery Plan_.[else][if condition='q#1729=Yes']All employees work remotely on their personal devices, so it is unlikely all will experience a disaster at the same time.[/if]
+1. To prepare to perform a disaster recovery, [q#2] will:[if condition='q#7>=1']
+    1. Train employees to recognize and report a disaster to [if condition='q#501=Yes']the EPCMT or [/if][if condition='q#7>20']their immediate manager[else]the ISO[/if].
+    1. Have multiple employees trained for critical tasks for redundancy.[/if][if condition='q#497=Yes']
+    1. Store backup copies of key disaster-related documents [q#498]. These documents will include a List of Support Contacts – vendor, reseller, and/or support group contact information for all software and hardware.[else]
+    1. Keep an offsite backup copy of key disaster-related documents [q#55].[/if]
+    1. Keep an IT Assets Recovery Checklist for $the_noun([q#3]).
+    1. Document who can [if condition='q#7>=1']restore the systems, who is responsible for the recovery, whose role is to diagnose and, if needed, [/if]repair, replace, and/or rebuild a device.[if condition='q#1729=Yes']
+    1. Maintain current copies of system data and software keys at the designated off-site location.[/if]
+1. Once the disaster is certified, [q#2] will:
+    1. Facilitate recovery[if condition='q#7>=1'] by coordinating and communicating activities of various parties involved in recovery[/if];
+    1. Determine which devices/software (e.g., workstations, network, etc.) are not functioning normally;
+    1. Review the _IT Asset Recovery Checklist_ for the devices to be recovered; and
+    1. Restore devices and test functionality before restoring to service.
+[/if]
+
