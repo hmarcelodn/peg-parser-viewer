@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"></link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://codemirror.net/addon/mode/simple.js"></script> 
 
   <style>.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}</style>
   <style>
@@ -21,6 +22,10 @@
 
     #submit {
       margin: 10px;
+    }
+
+    .cm-style1{
+      color: red;
     }
   </style>
 
@@ -58,11 +63,18 @@
   </body>
 
   <script>
+    CodeMirror.defineSimpleMode("thl", {
+      start: [
+        {regex: /\[if condition='.*?'\]/, token: "variable-2"},
+        {regex: /\[\/if]/, token: "variable-2"},
+        {regex: /\[else]/, token: "variable-2"},
+        {regex: /[-+\/*=<>!]+/, token: "operator"},
+      ],
+    });
+
     var expressionEditor = CodeMirror.fromTextArea(document.getElementById("expression"), {
-      lineNumbers: true,
-      mode: "application/x-ejs",
-      indentUnit: 4,
-      indentWithTabs: true,
+      lineNumbers: false,
+      mode: "thl",
     });
 
     var grammarEditor = CodeMirror.fromTextArea(document.getElementById("grammar"), {
