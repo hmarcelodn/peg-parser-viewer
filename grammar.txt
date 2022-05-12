@@ -51,7 +51,7 @@
 
 start = Code
 
-Code = token:(ConditionalBooleanStatement / Text )* {
+Code = token: (Text / ConditionalBooleanStatement)*{
 	return token.join('');
 }
  
@@ -100,12 +100,22 @@ Value = val:(String / Number / Boolean)+ {
 	return val.join('');
 }
 
-Text = token:[^\[\]]+ {
-	return token.join('');
-}
+Text = [^\[\]\\] / Escape sequence:(
+	"\\" { 
+    	return "\\"; 
+    } / 
+    "[" { 
+  		return "\x5b"; 
+    } /
+    "]" {
+    	return "\x5d";
+    })
+    { 
+    	return sequence; 
+    }
 
-String = token:('"' [ a-zA-Z0-9_=.,;:'\\|{}!@#\$%^&*()-_]+ '"') { 
-	return token[1].join('').toString();
+String = token:(_ '"' [ a-zA-Z0-9_=.,;:'\\|{}!@#\$%^&*()-_]* '"' _) { 
+	return token[2].join('').toString();
 }
 
 Number = token:[0-9]+ {
@@ -118,5 +128,7 @@ Boolean = bool:("true" / "false") {
 }
 
 Operator = op:("=" / "!=" / ">" / "<" / ">=" / "<=" / "$=")+
+
+Escape = "\\"
 
 _ "whitespace" = [ \t\n\r\0]* 
