@@ -65,10 +65,14 @@
   <script>
     CodeMirror.defineSimpleMode("thl", {
       start: [
-        {regex: /\[if condition='.*?'\]/, token: "variable-2"},
-        {regex: /\[\/if]/, token: "variable-2"},
+        {regex: /\[if condition='/, token: "variable-2"},
+        {regex: /[\]\[|\'\]']/, token: "variable-2"},
+        {regex: /\/if/, token: "variable-2"},
         {regex: /\[else]/, token: "variable-2"},
         {regex: /[-+\/*=<>!]+/, token: "operator"},
+        {regex: /0x[a-f\d]+|[-+]?(?:\.\d+|\d+\.?\d*)(?:e[-+]?\d+)?/i, token: "number"},
+        {regex: /[-+\/*=<>!]+/, token: "operator"},
+        {regex: /"(?:[^\\]|\\.)*?(?:"|$)/, token: "string"},
       ],
     });
 
