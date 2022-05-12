@@ -46,7 +46,7 @@ export class THLVisitor {
         if (ast.length) {
             template = ast.reduce((acc, node) => {
                 if (typeof node === 'string') {
-                    acc += node;
+                    acc += this.tokenize(node);
                 }
 
                 if (typeof node === 'object') {

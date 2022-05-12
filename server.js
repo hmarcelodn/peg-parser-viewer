@@ -8,7 +8,7 @@ const app = express();
 const router = express.Router();
 const port = process.env.PORT || 3000;
 const defaultExpression = `
-This is a test template
+This is a test template ([q#1]) ([v#1]) ([c#1])
 [if condition='[q#1]="Test Question"']Worked Questions[/if]
 [if condition='[v#1]="Test Variable"']Worked Variables[/if]
 [if condition='[c#1]="Test Constant"']Worked Constants[/if]

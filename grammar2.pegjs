@@ -73,7 +73,17 @@ ConditionalBooleanStatement
         }
     }
 
-Value = val:(String / Number / Boolean / QuestionToken / VariableToken / ConstantToken)+ {
+Value = val:(
+	String / 
+    Number / 
+    Boolean / 
+    SimpleQuestionToken / 
+    SimpleConstantToken / 
+    SimpleVariableToken /
+    QuestionToken / 
+    ConstantToken / 
+    VariableToken
+)+ {
 	return val.join('');
 }
 
@@ -107,16 +117,29 @@ Boolean = bool:("true" / "false") {
 }
 
 VariableToken = "[v#" id:[0-9]+ "]" {
-	return "[v#" + id.join('') + "]"
+	return "[v#" + id.join('') + "]";
 }
 
 ConstantToken = "[c#" id:[0-9]+ "]" {
-	return "[c#" + id.join('') + "]"
+	return "[c#" + id.join('') + "]";
 }
 
 QuestionToken = "[q#" id:[0-9]+ "]" {
-	return "[q#" + id.join('') + "]"
+	return "[q#" + id.join('') + "]";
 }
+
+SimpleQuestionToken = "q#" id:[0-9]+ {
+	return "q#" + id.join('')
+}
+
+SimpleConstantToken = "c#" id:[0-9]+ {
+	return "c#" + id.join('');
+}
+
+SimpleVariableToken = "v#" id:[0-9]+ {
+	return "v#" + id.join('');
+}
+
 
 Operator = op:("=" / "!=" / ">" / "<" / ">=" / "<=" / "$=")+
 
