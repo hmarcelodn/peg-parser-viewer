@@ -131,4 +131,4 @@ Operator = op:("=" / "!=" / ">" / "<" / ">=" / "<=" / "$=")+
 
 Escape = "\\"
 
-_ "whitespace" = [ \t\n\r\0]* 
+_ "whitespace" = [ \t\r\0]* 
