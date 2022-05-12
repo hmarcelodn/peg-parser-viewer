@@ -16,7 +16,7 @@
       width: 100%;    
     }
 
-    #grammar {
+    #grammar, #results {
       height: 200px;
     }
 
@@ -32,14 +32,8 @@
   <body class="container">
     <main>
       <div>
-        <form action="/" method="POST">
-          <h2>Grammar</h2>
-          <div class="alert alert-info" role="alert">
-            This is the grammar that makes the expression possible to work
-          </div>
-          <textarea id="grammar" name="grammar"><%=  data.grammar %></textarea>
-  
-          <h2>Expression</h2>
+        <form action="/" method="POST">  
+          <h2>Template Expression</h2>
           <div class="alert alert-info" role="alert">
             Write the text expression to process
           </div>
@@ -53,10 +47,8 @@
             </div>
           </div>
   
-          <h2>Text</h2>
-          <div class="alert alert-dark" role="alert">
-            <%= data.results %>
-          </div>
+          <h2>Template Processed</h2>
+          <textarea id="results"><%= data.results %></textarea>
         </form>
       </div>
     </main>
@@ -80,14 +72,7 @@
     var expressionEditor = CodeMirror.fromTextArea(document.getElementById("expression"), {
       lineNumbers: false,
       mode: "thl",
-    });
-
-    var grammarEditor = CodeMirror.fromTextArea(document.getElementById("grammar"), {
       lineNumbers: true,
-      mode: "application/x-ejs",
-      indentUnit: 4,
-      indentWithTabs: true,
-      theme: 'monokai',
     });
   </script>
 </html>
