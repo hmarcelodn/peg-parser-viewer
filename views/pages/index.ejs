@@ -35,7 +35,9 @@
         <form action="/" method="POST">  
           <h2>Template Expression</h2>
           <div class="alert alert-info" role="alert">
-            Write the text expression to process
+            [q#1]: returns "Test Question",
+            [v#1]: returns "Test Variable",
+            [c#1]: returns "Test Constant"
           </div>
           <textarea id="expression" name="expression"><%= data.expression %></textarea>
   
