@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
         const thlAst = thlParser.parse(defaultExpression);
         template = thlVisitor.visitAst(thlAst);
     } catch(e) {
-        parserError = e.message;
+        parserError = `Line ${e.location.start.line}, column ${e.location.start.column}, ${e.message}`;
     }
 
     res.render('pages/index', {
@@ -54,8 +54,7 @@ router.post('/', (req, res) => {
         const thlAst = thlParser.parse(req.body.expression);
         template = thlVisitor.visitAst(thlAst);
     } catch(e) {
-        console.log('err', e);
-        parserError = e.message;
+        parserError = `Line ${e.location.start.line}, column ${e.location.start.column}, ${e.message}`;
     }
 
     console.log('template', template);
