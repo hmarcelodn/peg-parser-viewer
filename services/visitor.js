@@ -1,71 +1,150 @@
 export class THLVisitor {
-    tokenize(value) {
-        // If question, get value
-        if (/\[q#[0-9]+\]/.test(value)) {
-            return "Test Question"
+    interpret(text) {
+        try {
+          const ast = this.parser.parse(text.toString());
+          return this.visitAst(ast);
+        } catch (e) {
+          throw new HttpException(
+            400,
+            `Line ${e.location.start.line}, column ${e.location.start.column}, ${e.message}`,
+          )
+        }
+      }
+    
+    questionToken = {
+        getGlobalRegex: () => /\[q#([0-9]+)\]/g,
+        getConditionParamRegex: () => /q#([0-9]+)/g,
+    };
+    
+    variableToken = {
+        getGlobalRegex: () => /\[v#([0-9]+)\]/g,
+        getConditionParamRegex: () => /v#([0-9]+)/g,
+    };
+      
+    constantToken = {
+        getGlobalRegex: () => /\[c#([0-9]+)\]/g,
+        getConditionParamRegex: () => /c#([0-9]+)/g,
+    };
+    
+    replaceQuestionTokens() {
+        return 'Question1'
+    }
+    
+    replaceVariables(text, variables, re = this.variableToken.getGlobalRegex()) {
+        return text ? 'Variable1' : '';
+    }
+      
+    replaceConstants(text, constants, re = this.constantToken.getGlobalRegex()) {
+        return text ? 'Constant1' : '';
+    }
+    
+    replaceDynamicTokens(value) {
+        if (this.questionToken.getGlobalRegex().test(value)) {
+            return this.replaceQuestionTokens(value, this.answers, this.questions);
         }
 
-        if (/\[v#[0-9]+\]/.test(value)) {
-            return "Test Variable"
+        if (this.questionToken.getConditionParamRegex().test(value)) {
+            return this.replaceQuestionTokens(value, this.answers, this.questions, this.questionToken.getConditionParamRegex());
+        }
+
+        if (this.variableToken.getGlobalRegex().test(value)) {
+            return this.replaceVariables(value, this.variables);
         }        
 
-        if (/\[c#[0-9]+\]/.test(value)) {
-            return "Test Constant"
+        if (this.variableToken.getConditionParamRegex().test(value)) {
+            return this.replaceVariables(value, this.variables, this.variableToken.getConditionParamRegex());
+        }
+
+        if (this.constantToken.getGlobalRegex().test(value)) {
+            return this.replaceConstants(value, this.constants);
+        }
+
+        if (this.constantToken.getConditionParamRegex().test(value)) {
+            return this.replaceConstants(value, this.constants, this.constantToken.getConditionParamRegex());
         }
 
         return value;
     }
-
-    compare(lhs, rhs, op) {
-        lhs = this.tokenize(lhs);
-        rhs = this.tokenize(rhs);
+    
+    evaluateConditionTerm(lhs, rhs, op) {
+        lhs = this.replaceDynamicTokens(lhs);
+        rhs = this.replaceDynamicTokens(rhs);
         
         switch (op) {
-            case '<':
+          case '<':
             return parseFloat(lhs) < parseFloat(rhs);
-           case '>':
-             return parseFloat(lhs) > parseFloat(rhs);
-           case '>=':
+          case '>':
+            return parseFloat(lhs) > parseFloat(rhs);
+          case '>=':
             return parseFloat(lhs) >= parseFloat(rhs);
-           case '<=':
+          case '<=':
             return parseFloat(lhs) <= parseFloat(rhs);
-           case '$=':
-            return lhs.includes(rhs);
-           case '=':
-            return lhs === rhs;
-           case '!=':
-            return lhs !== rhs;
-           default:
+          case '$=':
+            return lhs.trim().includes(rhs.trim());
+          case '=':
+            return lhs.trim() === rhs.trim();
+          case '!=':
+            return lhs.trim() !== rhs.trim();
+          default:
             return false;
         }
     }
-
-    visit(ast) {
-        let template = '';
-
-        if (ast.length) {
-            template = ast.reduce((acc, node) => {
-                if (typeof node === 'string') {
-                    acc += this.tokenize(node);
-                }
-
-                if (typeof node === 'object') {
-                    const { conditionalStatement } = node;
-                    const { conditional, body1, body2 } = conditionalStatement;
-                    const { lhs, rhs, op } = conditional;
-                    const result = this.compare(lhs, rhs, op);
-                    
-                    if (result) {
-                        acc += this.visit(body1);
-                    } else {
-                        acc += this.visit(body2);
-                    }
-                }
-
-                return acc;
-            }, '');
+    
+    visitBooleanExpressions(tree) {
+        const results = [];
+      
+        if (tree?.predicates) {
+          const operator = tree.op;
+          const predicates = tree.predicates;
+          let recursiveResult = false;
+          let hasRecursion = false;
+    
+          for (let i = 0; i < predicates.length; i++) {
+             const predicateExpressionNode = predicates[i];
+       
+             if (predicateExpressionNode.predicates) {
+                 hasRecursion = true;
+                recursiveResult = this.visitBooleanExpressions(predicates[i]);
+             } else {
+                const { lhs, rhs, op } = predicateExpressionNode;
+                results.push(this.evaluateConditionTerm(lhs, rhs, op));                
+             }
+          }
+    
+          if (operator === '||') {
+            return results.some(r => r === true) || (hasRecursion ? recursiveResult: true);
+          }
+          return results.every(r => r === true) && (hasRecursion ? recursiveResult : true);
         }
-
+    
+        return this.evaluateConditionTerm(tree.lhs, tree.rhs, tree.op);
+      }
+    
+    visitAst(ast) {
+        let template = '';
+    
+        if (ast.length) {
+          template = ast.reduce((acc, node) => {
+            if (typeof node === 'string') {
+              acc += this.replaceDynamicTokens(node);
+            }
+    
+            if (typeof node === 'object') {
+              const { conditionalStatement } = node;
+              const { conditional, body1, body2 } = conditionalStatement;
+              const result = this.visitBooleanExpressions(conditional);
+              
+              if (result) {
+                acc += this.visitAst(body1);
+              } else {
+                acc += this.visitAst(body2);
+              }
+            }
+    
+            return acc;
+          }, '');
+        }
+    
         return template;
     }
 }

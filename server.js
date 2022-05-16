@@ -18,7 +18,7 @@ This is a test template ([q#1]) ([v#1]) ([c#1])
 [if condition='true=true'][if condition='true=true'][if condition='true=true']Nested[/if][/if][/if]
 and its closing
 `;
-const defaultGrammar = fs.readFileSync('./grammar2.pegjs', 'utf-8');
+const defaultGrammar = fs.readFileSync('./grammar3.pegjs', 'utf-8');
 const thlParser = peg.generate(defaultGrammar.toString());
 const thlVisitor = new THLVisitor();
 
@@ -27,25 +27,45 @@ app.use(bodyParser.json({limit: '900mb'}));
 app.use(bodyParser.urlencoded({limit: '900mb', extended: true}));
 
 router.get('/', (req, res) => {
-    const thlAst = thlParser.parse(defaultExpression);
-    const template = thlVisitor.visit(thlAst);
+    let parserError = '';
+    let template = '';
+
+    try {
+        const thlAst = thlParser.parse(defaultExpression);
+        template = thlVisitor.visitAst(thlAst);
+    } catch(e) {
+        parserError = e.message;
+    }
 
     res.render('pages/index', {
         data: {
             expression: defaultExpression,
             results: template,
+            parserError,
         },
     });
 });
 
 router.post('/', (req, res) => {
-    const thlAst = thlParser.parse(req.body.expression);
-    const template = thlVisitor.visit(thlAst);
+    let parserError = '';
+    let template = '';
+
+    try {
+        const thlAst = thlParser.parse(req.body.expression);
+        template = thlVisitor.visitAst(thlAst);
+    } catch(e) {
+        console.log('err', e);
+        parserError = e.message;
+    }
+
+    console.log('template', template);
+    console.log('parserError', parserError);
 
     res.render('pages/index', {
         data: {
             expression: req.body.expression,
             results: template,
+            parserError,
         },
     });
 });

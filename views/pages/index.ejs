@@ -34,23 +34,26 @@
       <div>
         <form action="/" method="POST">  
           <h2>Template Expression</h2>
-          <div class="alert alert-info" role="alert">
-            [q#1]: returns "Test Question",
-            [v#1]: returns "Test Variable",
-            [c#1]: returns "Test Constant"
-          </div>
+
           <textarea id="expression" name="expression"><%= data.expression %></textarea>
   
           <div class="container">
             <div class="row">
               <div class="col text-center">
-                <button type="submit" class="btn btn-primary" id="submit">Parse Expression</button>
+                <button type="submit" class="btn btn-primary" id="submit">Parse Template Below</button>
               </div>
             </div>
           </div>
   
           <h2>Template Processed</h2>
           <textarea id="results"><%= data.results %></textarea>
+
+          <h2>Template Processed</h2>
+          <% if (data.parserError !== '') { %>
+          <div class="alert alert-danger" role="alert">
+            <%= data.parserError %>
+          </div>
+          <% } %>
         </form>
       </div>
     </main>
