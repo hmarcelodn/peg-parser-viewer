@@ -97,7 +97,7 @@ String = token:(_ '"' [ a-zA-Z0-9_=.,;:'\\|{}!@#\$%^&*()-_§><]* '"' _) {
 } / [a-zA-Z \/,()-]
 
 Number = token:[0-9]+ {
-	return parseFloat(token); 
+	return token.join('');
 }
 
 Boolean = bool:("true" / "false") {

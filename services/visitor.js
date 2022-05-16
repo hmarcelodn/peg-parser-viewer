@@ -67,6 +67,8 @@ export class THLVisitor {
     }
     
     evaluateConditionTerm(lhs, rhs, op) {
+        console.log('valid', lhs, rhs, parseFloat(lhs) < parseFloat(rhs))
+
         lhs = this.replaceDynamicTokens(lhs);
         rhs = this.replaceDynamicTokens(rhs);
         
