@@ -47,9 +47,9 @@
   
           <h2>Template Processed</h2>
           <textarea id="results"><%= data.results %></textarea>
-
-          <h2>Template Processed</h2>
+          
           <% if (data.parserError !== '') { %>
+          <h2>Template Errors</h2>
           <div class="alert alert-danger" role="alert">
             <%= data.parserError %>
           </div>

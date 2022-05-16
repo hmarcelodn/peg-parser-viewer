@@ -57,9 +57,6 @@ router.post('/', (req, res) => {
         parserError = `Line ${e.location.start.line}, column ${e.location.start.column}, ${e.message}`;
     }
 
-    console.log('template', template);
-    console.log('parserError', parserError);
-
     res.render('pages/index', {
         data: {
             expression: req.body.expression,
