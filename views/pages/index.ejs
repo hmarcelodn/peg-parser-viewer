@@ -49,9 +49,12 @@
           <textarea id="results"><%= data.results %></textarea>
           
           <% if (data.parserError !== '') { %>
-          <h2>Template Errors</h2>
           <div class="alert alert-danger" role="alert">
             <%= data.parserError %>
+          </div>
+          <% } else{ %> 
+          <div class="alert alert-success" role="success">
+            Input parsed successfully.
           </div>
           <% } %>
         </form>
